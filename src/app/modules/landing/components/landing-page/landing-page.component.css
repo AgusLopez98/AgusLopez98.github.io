@@ -7,12 +7,16 @@ div {
     padding: 10px;
 }
 
-h1 {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 10rem;
-    text-align: center;
-}
-
 p {
     text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 6rem;
+    color: #612179;
+    margin: 15rem 10rem 0 0;
+}
+
+img {
+    width: 40rem;
+    height: 40rem;
+    margin-left: 10rem;
 }
