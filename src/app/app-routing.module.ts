@@ -15,6 +15,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/auth/auth.module').then(m => m.AuthModule)
   },
   {
+    path: 'contact',
+    loadChildren: () => import('./modules/contact/contact.module').then(m => m.ContactModule)
+  },
+  {
     path: '**',
     component: Error404Component
   }
