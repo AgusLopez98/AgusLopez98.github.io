@@ -1,4 +1,4 @@
-import { IProducts, IUser } from "./interfaces";
+import { ICard, IProducts, IUser } from "./interfaces";
 
 export class Product implements IProducts{
     id: number | null;
@@ -23,18 +23,43 @@ export class Product implements IProducts{
     
 }
 
+export class Card implements ICard{
+    number: number | null;
+    security_code: number | null;
+    expiration: string | null;
+    
+    constructor(card?: any){
+        this.number = card.number != null ? card.number: null;
+        this.security_code = card.security_code != null ? card.security_code: null;
+        this.expiration = card.expiration != null ? card.expiration: null;
+    }
+}
+
 export class User implements IUser{
     id: number | null;
-    username: string | null;
+    name: string | null;
+    lastName: string | null;
     mail: string | null;
     password: string | null;
-    cart: Array<Product> | null;
-    
+    province: string | null;
+    city: string | null;
+    street: number | null;
+    dni: number | null;
+    card: Card[] | null;
+    cart: Product[] | null;
+
     constructor(user?: any){
         this.id = user.id != null ? user.id: null;
-        this.username = user.username != null ? user.username: null;
+        this.name = user.name != null ? user.name: null;
+        this.lastName = user.lastName != null ? user.lastName: null;
         this.mail = user.mail != null ? user.mail: null;
         this.password = user.password != null ? user.password: null;
-        this.cart = user.cart != null ? user.cart : [];
+        this.province = user.province != null ? user.province: null;
+        this.city = user.city != null ? user.city: null;
+        this.street = user.street != null ? user.street: null;
+        this.dni = user.dni != null ? user.dni: null;
+        this.card = user.card != null ? user.card: null;
+        this.cart = user.cart != null ? user.cart: null;
     }
+    
 }

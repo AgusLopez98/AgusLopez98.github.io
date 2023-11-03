@@ -1,4 +1,4 @@
-import { Product } from "./models";
+import { Card, Product } from "./models";
 
 export interface IProducts{
     id: number | null;
@@ -11,11 +11,23 @@ export interface IProducts{
     images: Array<string> | null;
 }
 
+export interface ICard {
+    number: number | null;
+    security_code: number | null;
+    expiration: string | null;
+}
+
 export interface IUser{
     id: number | null;
-    username: string | null;
+    name: string | null;
+    lastName: string | null;
     mail: string | null;
     password: string | null;
+    province: string | null;
+    city: string | null;
+    street: number | null;
+    dni: number | null;
+    card: Array<Card> | null;
     cart: Array<Product> | null;
 }
 
