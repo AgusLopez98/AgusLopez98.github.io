@@ -1,8 +1,8 @@
 <nav class="navbar">
     <button (click)="toLanding()"><img src="" alt="" class="logo"></button>
     <div class="buttons">
-        <button class="btn" *ngIf="ocultarBoton" (click)="toLogin()">Loguear</button>
-        <button class="btn" *ngIf="ocultarBoton" (click)="toRegister()">Registrarse</button>
-        <button class="btn" *ngIf="ocultarBoton" (click)="toContact()">Contacto</button>
+        <button class="btn" *ngIf="ocultarLogin" (click)="toLogin()">Loguear</button>
+        <button class="btn" *ngIf="ocultarRegister" (click)="toRegister()">Registrarse</button>
+        <button class="btn" *ngIf="ocultarContacto" (click)="toContact()">Contacto</button>
     </div>
 </nav>

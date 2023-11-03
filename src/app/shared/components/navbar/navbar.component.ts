@@ -8,15 +8,24 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class NavbarComponent {
 
-  ocultarBoton: boolean = true;
+  ocultarLogin: boolean = true;
+  ocultarRegister: boolean = true;
+  ocultarContacto: boolean = true;
 
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        if (event.url === '/auth/login' || event.url === '/auth/register' || event.url === '/contact') {
-          this.ocultarBoton = false;
-        } else {
-          this.ocultarBoton = true;
+        if (event.url === '/auth/login') {
+          this.ocultarLogin = false;
+        }else if(event.url === '/auth/register'){
+          this.ocultarRegister = false;
+        }else if(event.url === '/contact'){
+          this.ocultarContacto = false;
+        }
+         else {
+          this.ocultarLogin = true;
+          this.ocultarRegister = true;
+          this.ocultarContacto = true;
         }
       }
     });
