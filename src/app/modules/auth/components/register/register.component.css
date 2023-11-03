@@ -1,0 +1,50 @@
+/* Estilos generales para el formulario */
+
+form {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    text-align: left;
+}
+
+.marginTop{
+    margin-top: 2rem;
+}
+
+/* Estilos para las etiquetas */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para los campos de entrada de texto */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Estilos para el botón "Registrarse" */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
