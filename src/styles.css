@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,500&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(31, 0, 36);
+    background: linear-gradient(180deg, rgba(31, 0, 36, 1) 0%, rgba(224, 0, 255, 1) 47%, rgba(245, 174, 255, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,18 @@
+div {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 10rem;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
