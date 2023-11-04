@@ -24,11 +24,13 @@ export class Product implements IProducts{
 }
 
 export class Card implements ICard{
+    id: number | null;
     number: number | null;
     security_code: number | null;
     expiration: string | null;
     
     constructor(card?: any){
+        this.id = card.id != null ? card.id: null;
         this.number = card.number != null ? card.number: null;
         this.security_code = card.security_code != null ? card.security_code: null;
         this.expiration = card.expiration != null ? card.expiration: null;
@@ -39,11 +41,11 @@ export class User implements IUser{
     id: number | null;
     name: string | null;
     lastName: string | null;
-    mail: string | null;
+    email: string | null;
     password: string | null;
     province: string | null;
     city: string | null;
-    street: number | null;
+    street: string | null;
     dni: number | null;
     card: Card[] | null;
     cart: Product[] | null;
@@ -52,7 +54,7 @@ export class User implements IUser{
         this.id = user.id != null ? user.id: null;
         this.name = user.name != null ? user.name: null;
         this.lastName = user.lastName != null ? user.lastName: null;
-        this.mail = user.mail != null ? user.mail: null;
+        this.email = user.email != null ? user.email: null;
         this.password = user.password != null ? user.password: null;
         this.province = user.province != null ? user.province: null;
         this.city = user.city != null ? user.city: null;

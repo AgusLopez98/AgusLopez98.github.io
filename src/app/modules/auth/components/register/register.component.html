@@ -1,51 +1,50 @@
 <app-navbar></app-navbar>
 
-<form class="marginTop">
+<form class="marginTop" (ngSubmit)="addUserRegister()">
 
     <label for="name">Nombre Completo</label>
-    <input type="text" name="name" placeholder="Nombre">
-    <input type="text" name="lastName" placeholder="Apellido">
+    <input type="text" name="name" placeholder="Nombre" [(ngModel)]="user.name">
+    <input type="text" name="lastName" placeholder="Apellido" [(ngModel)]="user.lastName">
 
     <br>
 
     <label for="email">Email</label>
-    <input type="email" name="email" placeholder="Email">
+    <input type="email" name="email" placeholder="Email" [(ngModel)]="user.email">
 
     <br>
 
     <label for="password">Contraseña</label>
-    <input type="password" name="password" placeholder="Contraseña">
+    <input type="password" name="password" placeholder="Contraseña" [(ngModel)]="user.password">
 
     <br>
 
     <label for="localidad">Localidad</label>
-    <input type="text" name="province" placeholder="Provincia">
-    <input type="text" name="city" placeholder="Ciudad">
+    <input type="text" name="province" placeholder="Provincia" [(ngModel)]="user.province">
+    <input type="text" name="city" placeholder="Ciudad" [(ngModel)]="user.city">
 
     <br>
 
     <label for="direccion">Direccion</label>
-    <input type="number" name="street" placeholder="Calle y Altura">
+    <input type="text" name="street" placeholder="Calle y Altura" [(ngModel)]="user.street">
 
     <br>
 
     <label for="dni">DNI</label>
-    <input type="number" name="dni" placeholder="DNI titular">
+    <input type="number" name="dni" placeholder="DNI titular" [(ngModel)]="user.dni">
 
     <br>
 
     <label for="Card">Tarjeta</label>
-    <input type="number" name="number" placeholder="Numero de tarjeta">
+    <input type="number" name="number" placeholder="Numero de tarjeta" [(ngModel)]="card.number">
 
     <br>
 
-    <input type="number" name="security_code" placeholder="Cod. Seg.">
-    <input type="text" name="expiration" placeholder="Vencimiento">
+    <input type="number" name="security_code" placeholder="Cod. Seg."[(ngModel)]="card.security_code">
+    <input type="text" name="expiration" placeholder="Vencimiento" [(ngModel)]="card.expiration">
 
     <br>
 
     <button type="submit">Registrarse</button>
 
 </form>
-<form>
-</form>
+

@@ -1,3 +1,17 @@
 {
-    "users": []
+  "users": [
+    {
+      "id": 1,
+      "name": "ignacio",
+      "lastName": "lopez",
+      "email": "agustin_lopez_wtf@hotmail.com",
+      "password": "asd",
+      "province": "Buenos Aires",
+      "city": "Miramar",
+      "street": "41",
+      "dni": 41717515,
+      "card": null,
+      "cart": null
+    }
+  ]
 }

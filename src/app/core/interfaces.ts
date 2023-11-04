@@ -12,6 +12,7 @@ export interface IProducts{
 }
 
 export interface ICard {
+    id: number | null;
     number: number | null;
     security_code: number | null;
     expiration: string | null;
@@ -21,11 +22,11 @@ export interface IUser{
     id: number | null;
     name: string | null;
     lastName: string | null;
-    mail: string | null;
+    email: string | null;
     password: string | null;
     province: string | null;
     city: string | null;
-    street: number | null;
+    street: string | null;
     dni: number | null;
     card: Array<Card> | null;
     cart: Array<Product> | null;
