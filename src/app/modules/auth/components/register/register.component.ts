@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { Router } from '@angular/router';
 import { Card, User } from 'src/app/core/models';
 
 @Component({
@@ -8,10 +7,6 @@ import { Card, User } from 'src/app/core/models';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-
-  constructor(private router: Router){
-
-  }
 
   @Output() userRegister: EventEmitter<User> = new EventEmitter();
 
