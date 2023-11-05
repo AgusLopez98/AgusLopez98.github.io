@@ -1,6 +1,6 @@
-import { ICard, IProducts, IUser } from "./interfaces";
+import { ICard, IProduct, IUser } from "./interfaces";
 
-export class Product implements IProducts{
+export class Product implements IProduct{
     id: number | null;
     title: string | null;
     description: string | null;

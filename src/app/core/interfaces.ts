@@ -1,6 +1,6 @@
 import { Card, Product } from "./models";
 
-export interface IProducts{
+export interface IProduct{
     id: number | null;
     title: string | null;
     description: string | null;
@@ -29,6 +29,6 @@ export interface IUser{
     street: string | null;
     dni: number | null;
     card: Array<ICard> | null;
-    cart: Array<IProducts> | null;
+    cart: Array<IProduct> | null;
 }
 

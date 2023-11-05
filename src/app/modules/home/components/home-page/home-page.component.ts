@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/core/models';
+import { ApiService } from 'src/app/core/services/api.service';
 
 @Component({
   selector: 'app-home-page',
@@ -6,8 +8,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 
-export class HomePageComponent {
+export class HomePageComponent implements OnInit{
 
-  constructor() { }
+  public arrayProducts : Array<Product> = [];
+
+  ngOnInit(): void {
+      this.getProducts();
+  }
+
+  constructor(private apiService: ApiService) { }
+
+  public getProducts(){
+    this.apiService.getProductsFromAPI().subscribe({
+      next: resp => this.arrayProducts = resp,
+      error: (error) =>{
+        console.log(error);
+        this.arrayProducts = [];
+      }
+    })
+  }
 
 }
