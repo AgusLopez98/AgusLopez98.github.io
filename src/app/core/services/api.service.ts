@@ -10,10 +10,10 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  private ConsumoApi: string = 'https://dummyjson.com/products';
+  private consumoApi: string = 'https://dummyjson.com/products';
 
   public getProductsFromAPI(): Observable<Product[]>{
-    return this.http.get<Product[]>(this.ConsumoApi)
+    return this.http.get<Product[]>(this.consumoApi);
   }
 
 }

@@ -2,3 +2,22 @@
 
 <!-- https://www.youtube.com/watch?v=EHewBvQ5HCY -->
 
+<section class="contenido">
+    <div class="titulo-container">
+        <h2 class="titulo-catalogo">Catalogo de productos</h2>
+    </div>
+    <div class="mostrador" id="mostrador">
+        <div class="grid-container">
+            <div class="item" *ngFor="let producto of arrayProducts">
+                <div class="contenedor-foto">
+                    <img src="{{producto.images![0]}}" alt="">
+                    <p class="titulo">{{producto.title}}</p>
+                    <span class="precio">${{producto.price}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- falta realizar el desplegable -->
+

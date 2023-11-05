@@ -11,6 +11,7 @@ import { ApiService } from 'src/app/core/services/api.service';
 export class HomePageComponent implements OnInit{
 
   public arrayProducts : Array<Product> = [];
+Math: any;
 
   ngOnInit(): void {
       this.getProducts();
@@ -18,14 +19,19 @@ export class HomePageComponent implements OnInit{
 
   constructor(private apiService: ApiService) { }
 
-  public getProducts(){
+  public getProducts() {
     this.apiService.getProductsFromAPI().subscribe({
-      next: resp => this.arrayProducts = resp,
-      error: (error) =>{
+      next: (resp: any) => {
+        // Verifica si 'resp' tiene una propiedad 'products' que es un array
+        if (resp && Array.isArray(resp.products)) {
+          this.arrayProducts = resp.products;
+        }
+      },
+      error: (error) => {
         console.log(error);
         this.arrayProducts = [];
-      }
-    })
+      },
+    });
   }
 
 }
