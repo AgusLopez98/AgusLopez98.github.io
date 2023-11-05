@@ -28,7 +28,7 @@ export interface IUser{
     city: string | null;
     street: string | null;
     dni: number | null;
-    card: Array<Card> | null;
-    cart: Array<Product> | null;
+    card: Array<ICard> | null;
+    cart: Array<IProducts> | null;
 }
 

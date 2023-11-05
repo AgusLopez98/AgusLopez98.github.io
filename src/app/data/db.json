@@ -2,15 +2,22 @@
   "users": [
     {
       "id": 1,
-      "name": "ignacio",
-      "lastName": "lopez",
-      "email": "agustin_lopez_wtf@hotmail.com",
-      "password": "asd",
+      "name": "federico",
+      "lastName": "falotiche",
+      "email": "asd@gmail.com",
+      "password": "asd123",
       "province": "Buenos Aires",
       "city": "Miramar",
-      "street": "41",
-      "dni": 41717515,
-      "card": null,
+      "street": "26 1968",
+      "dni": 40095867,
+      "card": [
+        {
+          "id": null,
+          "number": 1234123,
+          "security_code": "123",
+          "expiration": "0709"
+        }
+      ],
       "cart": null
     }
   ]

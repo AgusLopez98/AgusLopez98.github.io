@@ -1,5 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { Card, User } from 'src/app/core/models';
+import { UsersService } from 'src/app/core/services/users.service';
 
 @Component({
   selector: 'app-register',
@@ -8,14 +10,25 @@ import { Card, User } from 'src/app/core/models';
 })
 export class RegisterComponent {
 
-  @Output() userRegister: EventEmitter<User> = new EventEmitter();
-
   public user: User = new User({id: null});
   public card: Card = new Card({id: null});
 
-  public addUserRegister(){
-    this.user.card?.push(this.card);
-    this.userRegister.emit(this.user);
+  constructor(private usersService: UsersService, private router: Router){}
+
+  //registrar nuevo usuario
+  public addUserHome() {
+    this.user.card = [this.card];
+    this.usersService.registerToApiService(this.user).subscribe({
+      next: (resp) => {
+        if (resp) {
+          alert(`Registrado con exito`);
+          this.router.navigate(['/auth/login']);
+
+        } else {
+          alert(`ERROR EN EL REGISTRO`);
+        }
+      }
+    })
   }
 
 }
