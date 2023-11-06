@@ -11,4 +11,9 @@ body {
     background: white;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Chakra Petch';
+}
+
+button{
+    font-family: 'Chakra Petch';
 }

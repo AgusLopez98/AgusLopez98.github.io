@@ -1,6 +1,9 @@
 import { ICard, IProduct, IUser } from "./interfaces";
 
 export class Product implements IProduct{
+  getElementsByTagName(arg0: string) {
+    throw new Error('Method not implemented.');
+  }
     id: number | null;
     title: string | null;
     description: string | null;
@@ -9,6 +12,7 @@ export class Product implements IProduct{
     category: string | null;
     thumbnail: string | null;
     images: string[] | null;
+  style: any;
 
     constructor(product?: any){
         this.id = product.id != null ? product.id: null;

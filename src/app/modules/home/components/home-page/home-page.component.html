@@ -1,23 +1,32 @@
 <app-navbar></app-navbar>
 
-<!-- https://www.youtube.com/watch?v=EHewBvQ5HCY -->
-
 <section class="contenido">
-    <div class="titulo-container">
-        <h2 class="titulo-catalogo">Catalogo de productos</h2>
-    </div>
+    
     <div class="mostrador" id="mostrador">
-        <div class="grid-container">
-            <div class="item" *ngFor="let producto of arrayProducts">
+        <h1>Catálogo de productos</h1>
+        <div class="fila">
+            <div class="item" *ngFor="let producto of arrayProducts" (click)="cargar(producto)">
                 <div class="contenedor-foto">
                     <img src="{{producto.images![0]}}" alt="">
-                    <p class="titulo">{{producto.title}}</p>
-                    <span class="precio">${{producto.price}}</span>
                 </div>
+                <p class="descripcion">{{ producto.title }}</p>
+                <span class="precio">$ {{ producto.price }}</span>
             </div>
         </div>
     </div>
+
+    <div class="seleccion" id="seleccion" *ngIf="productoSeleccionado">
+        <div class="cerrar" (click)="cerrar()">
+            &#x2715;
+        </div>
+        <div class="info">
+            <img src="{{productoSeleccionado.images![0]}}" alt="" id="img">
+            <h2 id="modelo">{{ productoSeleccionado.title }}</h2>
+            <h3 id="marca">Marca: {{productoSeleccionado.brand}}</h3>
+            <p id="descripcion">Descripción: {{productoSeleccionado.description }}</p>
+            <span class="precio" id="precio">$ {{ productoSeleccionado.price }}</span>
+            <button (click)="agregarAlCarrito(productoSeleccionado)">AGREGAR AL CARRITO</button>
+        </div>
+    </div>
+
 </section>
-
-<!-- falta realizar el desplegable -->
-

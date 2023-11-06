@@ -11,7 +11,8 @@ import { ApiService } from 'src/app/core/services/api.service';
 export class HomePageComponent implements OnInit{
 
   public arrayProducts : Array<Product> = [];
-Math: any;
+  public productoSeleccionado: Product | null = null;
+  public carrito: Array<Product> = [];
 
   ngOnInit(): void {
       this.getProducts();
@@ -32,6 +33,18 @@ Math: any;
         this.arrayProducts = [];
       },
     });
+  }
+
+  public cargar(producto: Product) {
+    this.productoSeleccionado = producto; // Cuando se hace clic en un producto, se asigna a productoSeleccionado
+  }
+
+  public cerrar() {
+    this.productoSeleccionado = null; // Para cerrar el producto seleccionado, asigna null a productoSeleccionado
+  }
+
+  public agregarAlCarrito(producto: Product){
+    this.carrito.push(this.productoSeleccionado!);
   }
 
 }
