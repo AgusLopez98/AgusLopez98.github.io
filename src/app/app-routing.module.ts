@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingPageComponent } from './modules/landing/components/landing-page/landing-page.component';
-import { Error404Component } from './shared/components/error404/error404.component';
 
 const routes: Routes = [
   {
@@ -22,8 +21,13 @@ const routes: Routes = [
     loadChildren: () => import('./modules/contact/contact.module').then(m => m.ContactModule)
   },
   {
+    path: '404',
+    loadComponent: () => import('./standalone/error404/error404.component').then(c => c.Error404Component)
+  },
+  {
     path: '**',
-    component: Error404Component
+    redirectTo: '404',
+    pathMatch: 'full'
   }
 ];
 
