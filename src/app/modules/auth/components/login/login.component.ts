@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
+import { User } from 'src/app/core/models';
+import { ApiService } from 'src/app/core/services/api.service';
+import { DataService } from 'src/app/core/services/data.service';
 import { UsersService } from 'src/app/core/services/users.service';
 
 @Component({
@@ -9,10 +12,12 @@ import { UsersService } from 'src/app/core/services/users.service';
 })
 export class LoginComponent {
 
-  constructor(private UserService: UsersService, private router: Router){}
+  constructor(private UserService: UsersService, private router: Router, private dataService: DataService){}
 
   public email: string = '';
   public password: string = '';
+
+  private user: User = new User({id: null})
 
   //iniciar sesion
   public initSession(){
@@ -20,6 +25,8 @@ export class LoginComponent {
       next: (resp) =>{
         if(resp.length == 1){
           this.router.navigate(['/home']);
+          this.user = resp[0];
+          this.dataService.setData(this.user);
         }else{
           alert("Usuario no encontrado, intente nuevamente")
         }

@@ -1,0 +1,48 @@
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .custom-button {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #000000;
+    padding: 20px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    margin: 10px 0;
+    background-repeat: no-repeat; 
+    background-position: 2rem center; 
+    background-size: 4rem 4rem; 
+    height: 15rem;
+    width: 35rem;
+    font-size: 2.5rem;
+  }
+
+  .user-button {
+    background-image: url('../../../../../assets/modifyUser.png');
+    padding-left: 5rem;
+  }
+
+  .cards-button {
+    background-image: url('../../../../../assets/modifyCards.png');
+    padding-right: 11rem; 
+  }
+
+  .custom-button:hover {
+    background-color: #ececec;
+  }
+  
+  .custom-button:active {
+    background-color: #cecece;
+  }
+  
+  .custom-button:focus {
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.7);
+  }
+  

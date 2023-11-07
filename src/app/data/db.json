@@ -19,6 +19,26 @@
         }
       ],
       "cart": null
+    },
+    {
+      "id": 2,
+      "name": "Ignacio Agustin",
+      "lastName": "Lopez",
+      "email": "agustin.lopez.9898@gmail.com",
+      "password": "123123",
+      "province": "Buenos Aires",
+      "city": "Miramar",
+      "street": "41 1363",
+      "dni": 41717515,
+      "card": [
+        {
+          "id": null,
+          "number": 0,
+          "security_code": "000",
+          "expiration": "00/00"
+        }
+      ],
+      "cart": null
     }
   ]
 }

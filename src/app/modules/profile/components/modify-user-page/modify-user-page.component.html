@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+
+<form class="marginTop" (ngSubmit)="modifyUser()">
+
+    <label for="name">Nombre Completo</label>
+    <input type="text" name="name" placeholder="Nombre" [(ngModel)]="user.name" required>
+    <input type="text" name="lastName" placeholder="Apellido" [(ngModel)]="user.lastName" required>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" placeholder="Email" [(ngModel)]="user.email" required>
+
+    <label for="password">Contraseña</label>
+    <input type="password" name="password" placeholder="Contraseña" [(ngModel)]="user.password" required>
+
+    <label for="localidad">Localidad</label>
+    <input type="text" name="province" placeholder="Provincia" [(ngModel)]="user.province">
+    <input type="text" name="city" placeholder="Ciudad" [(ngModel)]="user.city">
+
+    <label for="direccion">Direccion</label>
+    <input type="text" name="street" placeholder="Calle y Altura" [(ngModel)]="user.street" >
+
+    <label for="dni">DNI</label>
+    <input type="number" name="dni" placeholder="DNI titular" [(ngModel)]="user.dni" required>
+
+    <button type="submit">Modificar</button>
+
+</form>

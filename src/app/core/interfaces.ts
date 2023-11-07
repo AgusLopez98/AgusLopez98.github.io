@@ -1,5 +1,3 @@
-import { Card, Product } from "./models";
-
 export interface IProduct{
     id: number | null;
     title: string | null;
