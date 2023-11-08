@@ -24,37 +24,11 @@ export class RegisterComponent {
           alert(`Registrado con exito`);
           this.router.navigate(['/auth/login']);
         } else {
-          alert(`ERROR EN EL REGISTRO`);
+          alert(`El email ingresado ya se encuentra registrado`);
         }
       }
     })
   }
-
-  /* //registrar nuevo usuario
-  public addUserHome() {
-   this.user.card = [this.card];
-
-   this.usersService.getUserByCredentials(this.user.email!, this.user.password!).subscribe({
-     next: (resp)=>{
-       if(resp[0].email != this.user.email){
-         this.usersService.registerToApiService(this.user).subscribe({
-           next: (resp) => {
-             if (resp) {
-               alert(`Registrado con exito`);
-               this.router.navigate(['/auth/login']);
-             } else {
-               alert(`ERROR EN EL REGISTRO`);
-             }
-           }
-         });
-       } 
-     },
-
-     error: (error)=>{
-       alert('El usuario ya se encuentra registrado.');
-     }
-   })
-*/
 
 }
 
