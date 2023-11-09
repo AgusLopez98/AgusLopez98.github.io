@@ -10,8 +10,8 @@ import { UsersService } from 'src/app/core/services/users.service';
 })
 export class RegisterComponent {
 
-  public user: User = new User({ id: null });
-  public card: Card = new Card({ id: null });
+  public user: User = new User({ id: null});
+  public card: Card = new Card({number: null});
 
   constructor(private usersService: UsersService, private router: Router) { }
 

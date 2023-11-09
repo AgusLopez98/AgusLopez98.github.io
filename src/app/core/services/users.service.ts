@@ -45,4 +45,12 @@ export class UsersService {
     )
   }
 
+  //elimina tarjeta del perfil usuario
+  public deleteCardToApi(id: number):Observable<boolean>{
+    return this.http.delete<boolean>(`${this.baseURL}/cards/${id}`).pipe(
+      map(resp=>{return true}),
+      catchError(error=> of(false))
+      )
+  }
+
 }

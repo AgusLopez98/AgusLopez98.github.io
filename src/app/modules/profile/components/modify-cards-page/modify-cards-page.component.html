@@ -1,1 +1,35 @@
-<p>modify-cards-page works!</p>
+<app-navbar></app-navbar>
+
+<div class="container">
+    <h2>Mis Tarjetas</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Numero</th>
+                <th>Fecha de expiracion</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let card of user.card">
+                <td>{{card.number}}</td>
+                <td>{{card.expiration}}</td>
+                <td><button class="deleteButton" (click)="deleteCard(card.number!)">X</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="addButton" (click)="onEdit()">Agregar</button>
+
+    <form *ngIf="mostrarEdit" (ngSubmit)="addCard()">
+        <h2>Agregar Tarjeta:</h2>
+        <label for="number">Numero</label>
+        <input type="number" name="number" [(ngModel)]="cardAux.number">
+        <label for="security_code">Cod. Seg.</label>
+        <input type="number" name="security_code" [(ngModel)]="cardAux.security_code">
+        <label for="expiration">Vencimiento</label>
+        <input type="month" name="expiration" [(ngModel)]="cardAux.expiration">
+        <button class="addButton" type="submit">Agregar</button>
+    </form>
+</div>

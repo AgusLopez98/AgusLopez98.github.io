@@ -28,13 +28,11 @@ export class Product implements IProduct{
 }
 
 export class Card implements ICard{
-    id: number | null;
     number: number | null;
     security_code: number | null;
     expiration: string | null;
     
     constructor(card?: any){
-        this.id = card.id != null ? card.id: null;
         this.number = card.number != null ? card.number: null;
         this.security_code = card.security_code != null ? card.security_code: null;
         this.expiration = card.expiration != null ? card.expiration: null;

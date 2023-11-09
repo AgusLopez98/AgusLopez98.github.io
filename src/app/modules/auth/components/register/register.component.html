@@ -25,7 +25,8 @@
     <label for="Card">Tarjeta</label>
     <input type="number" name="number" placeholder="Numero de tarjeta" [(ngModel)]="card.number">
 
-    <input type="text" name="security_code" placeholder="Cod. Seg."[(ngModel)]="card.security_code">
+    <input type="number" name="security_code" placeholder="Cod. Seg."[(ngModel)]="card.security_code">
+
     <input type="text" name="expiration" placeholder="Vencimiento" [(ngModel)]="card.expiration">
 
     <button type="submit">Registrarse</button>

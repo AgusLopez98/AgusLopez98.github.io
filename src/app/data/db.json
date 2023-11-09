@@ -12,7 +12,6 @@
       "dni": 40095867,
       "card": [
         {
-          "id": null,
           "number": 1234123,
           "security_code": "123",
           "expiration": "0709"
@@ -32,10 +31,19 @@
       "dni": 41717515,
       "card": [
         {
-          "id": null,
-          "number": 0,
-          "security_code": "000",
-          "expiration": "00/00"
+          "number": 32323,
+          "security_code": 1212,
+          "expiration": "1212"
+        },
+        {
+          "number": 123123,
+          "security_code": 23,
+          "expiration": "12"
+        },
+        {
+          "number": 1233,
+          "security_code": 3123123,
+          "expiration": "1231-03"
         }
       ],
       "cart": null

@@ -10,7 +10,6 @@ export interface IProduct{
 }
 
 export interface ICard {
-    id: number | null;
     number: number | null;
     security_code: number | null;
     expiration: string | null;
