@@ -5,6 +5,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { AuthModule } from '../auth/auth.module';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     CommonModule,
     HomeRoutingModule,
     AuthModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ]
 })
 export class HomeModule { }

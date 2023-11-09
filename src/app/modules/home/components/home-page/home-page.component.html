@@ -1,11 +1,17 @@
 <app-navbar></app-navbar>
 
-<section class="contenido">
-    
-    <div class="mostrador" id="mostrador">
+<section class="encabezado">
+    <div>
         <h1>Catálogo de productos</h1>
+        <input type="text" [(ngModel)]="busqueda" placeholder="Buscar un producto por nombre o marca">
+    </div>
+</section>
+
+<section class="contenido">
+
+    <div class="mostrador" id="mostrador">
         <div class="fila">
-            <div class="item" *ngFor="let producto of arrayProducts" (click)="cargar(producto)">
+            <div class="item" *ngFor="let producto of buscarProducto()" (click)="cargar(producto)">
                 <div class="contenedor-foto">
                     <img src="{{producto.images![0]}}" alt="">
                 </div>

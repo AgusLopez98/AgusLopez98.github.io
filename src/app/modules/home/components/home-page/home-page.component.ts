@@ -13,6 +13,7 @@ export class HomePageComponent implements OnInit{
   public arrayProducts : Array<Product> = [];
   public productoSeleccionado: Product | null = null;
   public carrito: Array<Product> = [];
+  public busqueda: string = '';
 
   ngOnInit(): void {
       this.getProducts();
@@ -35,6 +36,16 @@ export class HomePageComponent implements OnInit{
     });
   }
 
+  public buscarProducto() {
+    return this.arrayProducts.filter(producto => {
+      const tittle = producto.title?.toLowerCase();
+      const brand = producto.brand?.toLowerCase();
+      const search = this.busqueda.toLowerCase();
+      
+      return tittle?.includes(search) || brand?.includes(search);
+    });
+  }
+
   public cargar(producto: Product) {
     this.productoSeleccionado = producto; // Cuando se hace clic en un producto, se asigna a productoSeleccionado
   }
@@ -46,5 +57,7 @@ export class HomePageComponent implements OnInit{
   public agregarAlCarrito(producto: Product){
     this.carrito.push(this.productoSeleccionado!);
   }
+
+  
 
 }
