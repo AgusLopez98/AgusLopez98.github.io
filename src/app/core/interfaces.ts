@@ -15,6 +15,14 @@ export interface ICard {
     expiration: string | null;
 }
 
+export interface ICart{
+    id: number | null;
+    userId: number | null;
+    date: string | null;
+    products: Array<IProduct> | null;
+    total: number | null;
+} 
+
 export interface IUser{
     id: number | null;
     name: string | null;
@@ -26,6 +34,5 @@ export interface IUser{
     street: string | null;
     dni: number | null;
     card: Array<ICard> | null;
-    cart: Array<IProduct> | null;
+    cart: Array<ICart> | null;
 }
-

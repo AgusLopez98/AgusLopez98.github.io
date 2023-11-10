@@ -8,13 +8,18 @@
       "password": "asd123",
       "province": "Buenos Aires",
       "city": "Miramar",
-      "street": "26 1968",
+      "street": "26 1968 ",
       "dni": 40095867,
       "card": [
         {
           "number": 1234123,
           "security_code": "123",
           "expiration": "0709"
+        },
+        {
+          "number": 123456789,
+          "security_code": 123,
+          "expiration": "2025-06"
         }
       ],
       "cart": null
@@ -48,5 +53,6 @@
       ],
       "cart": null
     }
-  ]
+  ],
+  "carts": []
 }

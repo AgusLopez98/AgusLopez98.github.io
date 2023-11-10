@@ -1,9 +1,7 @@
-import { ICard, IProduct, IUser } from "./interfaces";
+import { ICard, IProduct, IUser, ICart } from "./interfaces";
 
 export class Product implements IProduct{
-  getElementsByTagName(arg0: string) {
-    throw new Error('Method not implemented.');
-  }
+
     id: number | null;
     title: string | null;
     description: string | null;
@@ -12,7 +10,6 @@ export class Product implements IProduct{
     category: string | null;
     thumbnail: string | null;
     images: string[] | null;
-  style: any;
 
     constructor(product?: any){
         this.id = product.id != null ? product.id: null;
@@ -28,6 +25,7 @@ export class Product implements IProduct{
 }
 
 export class Card implements ICard{
+  
     number: number | null;
     security_code: number | null;
     expiration: string | null;
@@ -37,6 +35,24 @@ export class Card implements ICard{
         this.security_code = card.security_code != null ? card.security_code: null;
         this.expiration = card.expiration != null ? card.expiration: null;
     }
+}
+
+export class Cart implements ICart{
+
+    id: number | null;
+    userId: number | null;
+    date: string | null;
+    products: IProduct[] | null;
+    total: number | null;
+
+    constructor(cart?: any){
+        this.id = cart.id != null ? cart.id: null;
+        this.userId = cart.userId != null ? cart.userId: null;
+        this.date = cart.date != null ? cart.date: null;
+        this.products = cart.products != null ? cart.product: null;
+        this.total = cart.total != null ? cart.total: null;
+    }
+    
 }
 
 export class User implements IUser{
@@ -50,7 +66,7 @@ export class User implements IUser{
     street: string | null;
     dni: number | null;
     card: Card[] | null;
-    cart: Product[] | null;
+    cart: Cart[] | null;
 
     constructor(user?: any){
         this.id = user.id != null ? user.id: null;
