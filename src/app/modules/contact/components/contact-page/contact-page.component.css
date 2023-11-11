@@ -1,0 +1,65 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: .5rem;
+}
+
+.formulario {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.campo {
+    display: flex;
+    margin: 1.5rem 0 .5rem 0;
+}
+
+.campo label {
+    flex-basis: 8rem;
+}
+
+input:not([type="radio"], [type="submit"]),
+.campo textarea,
+.campo select
+{
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+}
+
+input{
+    margin-bottom: 0.5rem;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+legend{
+    background-color: #a360c2;
+    width: 70%;
+    color: white;
+    padding: .5rem;
+    text-align: center;
+}
+
+.btn{
+    background-color: #a360c2;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;    
+    font-family: 'Chakra Petch';
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    background-color: #aa73c4;
+}
+
+fieldset{
+    margin-bottom: 1rem;
+    background-color: rgba(202, 202, 202, 0.676);
+}

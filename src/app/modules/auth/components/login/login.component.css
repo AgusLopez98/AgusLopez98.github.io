@@ -8,10 +8,9 @@ form {
     text-align: left;
 }
 
-/* Estilos para el título */
 h2 {
-    text-align: center; /* Centra el texto */
-    margin-bottom: 20px; /* Agrega espacio en la parte inferior del título */
+    text-align: center; 
+    margin-bottom: 20px; 
     margin-top: 70px;
 }
 
@@ -19,14 +18,12 @@ h2 {
     margin-top: 2rem;
 }
 
-/* Estilos para las etiquetas */
 label {
     font-weight: bold;
     display: block;
     margin-bottom: 1rem;
 }
 
-/* Estilos para los campos de entrada de texto */
 input[type="email"],
 input[type="password"] 
 {
@@ -38,7 +35,6 @@ input[type="password"]
     font-size: 14px;
 }
 
-/* Estilos para el botón "Registrarse" */
 button[type="submit"] {
     background-color: #a360c2;
     color: #fff;

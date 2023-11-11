@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ContactPageComponent {
 
+  public sendMessage(){
+    alert('Mensaje enviado, estaremos en contacto contigo');
+  }
+
 }
