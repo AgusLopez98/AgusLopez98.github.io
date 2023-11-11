@@ -14,6 +14,7 @@ export class HomePageComponent implements OnInit{
   public productoSeleccionado: Product | null = null;
   public carrito: Array<Product> = [];
   public busqueda: string = '';
+  public categoriesFilter: Set<string> = new Set<string>();
 
   ngOnInit(): void {
       this.getProducts();
@@ -36,15 +37,27 @@ export class HomePageComponent implements OnInit{
     });
   }
 
-  public buscarProducto() {
+  public toggleCategory(category: string): void {
+    if (this.categoriesFilter.has(category)) {
+        this.categoriesFilter.delete(category);
+    } else {
+        this.categoriesFilter.add(category);
+    }
+}
+
+public buscarProducto(): Product[] {
     return this.arrayProducts.filter(producto => {
-      const tittle = producto.title?.toLowerCase();
-      const brand = producto.brand?.toLowerCase();
-      const search = this.busqueda.toLowerCase();
-      
-      return tittle?.includes(search) || brand?.includes(search);
+        const title = producto.title?.toLowerCase();
+        const brand = producto.brand?.toLowerCase();
+        const search = this.busqueda.toLowerCase();
+
+        const categoryMatch = this.categoriesFilter.size === 0 ||
+            (producto.category && this.categoriesFilter.has(producto.category));
+
+        return categoryMatch && (title?.includes(search) || brand?.includes(search));
     });
-  }
+}
+
 
   public cargar(producto: Product) {
     this.productoSeleccionado = producto; // Cuando se hace clic en un producto, se asigna a productoSeleccionado
@@ -57,7 +70,5 @@ export class HomePageComponent implements OnInit{
   public agregarAlCarrito(producto: Product){
     this.carrito.push(this.productoSeleccionado!);
   }
-
-  
 
 }
