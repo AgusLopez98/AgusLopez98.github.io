@@ -1,38 +1,73 @@
 <app-navbar></app-navbar>
 
-<section class="encabezado">
-    <div>
-        <h1>Catálogo de productos</h1>
-        <input type="text" [(ngModel)]="busqueda" placeholder="Buscar un producto por nombre o marca">
-    </div>
-</section>
+<div class="div">
+    <section class="navbar">
+        <div>
+            <h3>Categoria</h3>
+            <label>
+                <input type="checkbox"><p>Smartphones</p>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox"> <p>Laptops</p>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox"> <p>Fragrances</p>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox"> <p>Skincare</p>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox"> <p>Groceries</p>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox"> <p>Home-Decoration</p>
+            </label>
+        </div>
+    </section>
 
-<section class="contenido">
+    <section class="contenido">
 
-    <div class="mostrador" id="mostrador">
-        <div class="fila">
-            <div class="item" *ngFor="let producto of buscarProducto()" (click)="cargar(producto)">
-                <div class="contenedor-foto">
-                    <img src="{{producto.images![0]}}" alt="">
+        <div class="encabezado">
+            <h1>Catálogo de productos</h1>
+            <input type="text" [(ngModel)]="busqueda"
+                placeholder="Buscar un producto por nombre o marca">
+        </div>
+
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" *ngFor="let producto of buscarProducto()"
+                    (click)="cargar(producto)">
+                    <div class="contenedor-foto">
+                        <img src="{{producto.images![0]}}" alt>
+                    </div>
+                    <p class="descripcion">{{ producto.title }}</p>
+                    <span class="precio">$ {{ producto.price }}</span>
                 </div>
-                <p class="descripcion">{{ producto.title }}</p>
-                <span class="precio">$ {{ producto.price }}</span>
             </div>
         </div>
-    </div>
 
-    <div class="seleccion" id="seleccion" *ngIf="productoSeleccionado">
-        <div class="cerrar" (click)="cerrar()">
-            &#x2715;
+        <div class="seleccion" id="seleccion" *ngIf="productoSeleccionado">
+            <div class="cerrar" (click)="cerrar()">
+                &#x2715;
+            </div>
+            <div class="info">
+                <img src="{{productoSeleccionado.images![0]}}" alt id="img">
+                <h2 id="modelo">{{ productoSeleccionado.title }}</h2>
+                <h3 id="marca">Marca: {{productoSeleccionado.brand}}</h3>
+                <p id="descripcion">Descripción:
+                    {{productoSeleccionado.description}}</p>
+                <span class="precio" id="precio">$ {{ productoSeleccionado.price
+                    }}</span>
+                <button (click)="agregarAlCarrito(productoSeleccionado)">AGREGAR
+                    AL
+                    CARRITO</button>
+            </div>
         </div>
-        <div class="info">
-            <img src="{{productoSeleccionado.images![0]}}" alt="" id="img">
-            <h2 id="modelo">{{ productoSeleccionado.title }}</h2>
-            <h3 id="marca">Marca: {{productoSeleccionado.brand}}</h3>
-            <p id="descripcion">Descripción: {{productoSeleccionado.description }}</p>
-            <span class="precio" id="precio">$ {{ productoSeleccionado.price }}</span>
-            <button (click)="agregarAlCarrito(productoSeleccionado)">AGREGAR AL CARRITO</button>
-        </div>
-    </div>
 
-</section>
+    </section>
+</div>

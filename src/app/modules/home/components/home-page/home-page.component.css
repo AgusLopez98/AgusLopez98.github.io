@@ -1,20 +1,20 @@
-*{
+html,
+body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-.encabezado{
+.encabezado {
     text-align: center;
     margin-top: 25px;
 }
 
-.encabezado h1{
+.encabezado h1 {
     margin-bottom: 30px;
     font-size: 1.5rem;
 }
 
-.encabezado input[type="text"]{
+.encabezado input[type="text"] {
     width: 35%;
     padding: 10px;
     margin-bottom: 5px;
@@ -24,13 +24,15 @@
     text-align: center;
 }
 
-.contenido{
+.contenido {
     max-width: 1200px;
     width: 100%;
     margin: 40px auto;
     display: flex;
+    flex-direction: column;
 }
-.mostrador{
+
+.mostrador {
     width: 100%;
     transition: .5s ease;
 }
@@ -51,7 +53,7 @@
     cursor: pointer;
     border-radius: 5px;
     transition: .3s;
-    flex: 1 1 calc(33.33% - 40px); 
+    flex: 1 1 calc(33.33% - 40px);
 }
 
 .mostrador .fila .item .descripcion {
@@ -61,28 +63,31 @@
     white-space: nowrap;
 }
 
-.mostrador .fila .item:hover{
+.mostrador .fila .item:hover {
     background-color: #e6e6e6;
 }
-.mostrador .fila .item img{
+
+.mostrador .fila .item img {
     width: 150px;
     height: 150px;
     margin: 30px 0;
 }
-.mostrador .fila .item .descripcion{
+
+.mostrador .fila .item .descripcion {
     color: #707070;
     font-weight: bold;
 }
-.mostrador .fila .item .precio{
+
+.mostrador .fila .item .precio {
     color: #f85151;
     font-weight: bold;
     font-size: 20px;
 }
 
-.seleccion{
+.seleccion {
     transition: .5s ease;
     opacity: 1;
-    width: 50%; 
+    width: 50%;
     border: 1px solid #ccc;
     position: relative;
     display: flex;
@@ -92,52 +97,60 @@
     max-height: 800px;
 }
 
-.cerrar{
+.cerrar {
     position: absolute;
     right: 20px;
     top: 20px;
     cursor: pointer;
 }
 
-.info{
+.info {
     padding: 20px;
 }
-.info img{
+
+.info img {
     display: block;
     margin: 30px auto;
     width: 80%;
 }
-.info h2{
+
+.info h2 {
     color: #707070;
     margin-bottom: 10px;
 }
-.info p{
+
+.info p {
     font-size: 14px;
     color: #707070;
     margin-bottom: 10px;
 }
-.info .precio{
+
+.info .precio {
     font-size: 30px;
     font-weight: bold;
     color: #f85151;
     margin-bottom: 10px;
     display: block;
 }
-.info .fila{
+
+.info .fila {
     display: flex;
     align-items: flex-end;
 }
-.info .fila label{
+
+.info .fila label {
     display: block;
     margin-bottom: 10px;
 }
-.info .fila select{
+
+.info .fila select {
     width: 100px;
     font-size: 18px;
     padding: 6px;
     margin-right: 30px;
 }
-.info .fila button{
+
+.info .fila button {
     height: 40px;
     border: none;
     padding: 0 10px;
@@ -145,3 +158,39 @@
     background-color: #f85151;
 }
 
+.navbar {
+    min-height: 100%;
+    width: 12%;
+    position: static;
+    background-color: #8854a9;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.navbar h3 {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.navbar label {
+    display: flex;
+    align-items: center;
+}
+
+.navbar input {
+    margin-left: 1.5rem;
+    transform: scale(1.5);
+}
+
+.navbar p {
+    padding: .5rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.div {
+    display: flex;
+    flex-direction: row;
+}
