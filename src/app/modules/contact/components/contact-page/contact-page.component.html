@@ -1,2 +1,84 @@
 <app-navbar></app-navbar>
-<p>contact-page works!</p>
+
+<header class="contenedor">
+    <h2>Ecommerce <span class="span-titulo"> Muebles Lopez</span></h2>
+</header>
+
+<form class="formulario">
+    <fieldset>
+        <legend>Tus Datos</legend>
+        <div class="campo">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre"
+                placeholder="Ingrese nombre..">
+        </div>
+
+        <div class="campo">
+            <label for="email">Email: </label>
+            <input type="text" id="email" placeholder="Ingrese email...">
+        </div>
+
+        <div class="campo">
+            <label for="tel">Tel: </label>
+            <input type="text" id="tel"
+                placeholder="Ingrese telefono...">
+        </div>
+
+        <div class="campo">
+            <label for="asunto">Asunto: </label>
+            <input type="text" id="asunto"
+                placeholder="Ingrese asunto...">
+        </div>
+
+        <div class="campo">
+            <label for="mensaje">Mensaje: </label>
+            <textarea id="mensaje" cols="30" rows="10"></textarea>
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Pais</legend>
+        <div class="campo">
+            <label for="paises">Paises: </label>
+            <select name="paises" id>
+                <option value disabled selected>-- Seleccione --</option>
+                <option value="ar">Argentina</option>
+                <option value="br">Brasil</option>
+                <option value="cl">Chile</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Informacion Extra</legend>
+
+        <label for="cliente">Cliente</label>
+        <input
+            type="radio"
+            id="cliente"
+            name="tipo-cliente"
+            value="cliente">
+
+        <label for="proveedor">Proveedor</label>
+        <input
+            type="radio"
+            id="proveedor"
+            name="tipo-cliente"
+            value="proveedor">
+
+        <div class="campo">
+            <label for="categorias">Categoria de Interes</label>
+            <input list="categorias">
+            <datalist id="categorias">
+                <option value="Cocina"></option>
+                <option value="Exterior"></option>
+                <option value="Living"></option>
+                <option value="Hogar"></option>
+                <option value></option>
+            </datalist>
+        </div>
+    </fieldset>
+
+    <input type="submit" value="submit" class="btn">
+</form>
