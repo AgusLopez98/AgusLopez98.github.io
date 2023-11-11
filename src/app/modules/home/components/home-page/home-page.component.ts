@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Product } from 'src/app/core/models';
 import { ApiService } from 'src/app/core/services/api.service';
+import { ProductoPopupComponent } from '../producto-popup/producto-popup.component';
 
 @Component({
   selector: 'app-home-page',
@@ -8,19 +10,17 @@ import { ApiService } from 'src/app/core/services/api.service';
   styleUrls: ['./home-page.component.css']
 })
 
-export class HomePageComponent implements OnInit{
+export class HomePageComponent implements OnInit {
 
-  public arrayProducts : Array<Product> = [];
-  public productoSeleccionado: Product | null = null;
-  public carrito: Array<Product> = [];
+  public arrayProducts: Array<Product> = [];
   public busqueda: string = '';
   public categoriesFilter: Set<string> = new Set<string>();
 
   ngOnInit(): void {
-      this.getProducts();
+    this.getProducts();
   }
 
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ApiService, private dialog: MatDialog) { }
 
   public getProducts() {
     this.apiService.getProductsFromAPI().subscribe({
@@ -39,36 +39,28 @@ export class HomePageComponent implements OnInit{
 
   public toggleCategory(category: string): void {
     if (this.categoriesFilter.has(category)) {
-        this.categoriesFilter.delete(category);
+      this.categoriesFilter.delete(category);
     } else {
-        this.categoriesFilter.add(category);
+      this.categoriesFilter.add(category);
     }
-}
+  }
 
-public buscarProducto(): Product[] {
+  public buscarProducto(): Product[] {
     return this.arrayProducts.filter(producto => {
-        const title = producto.title?.toLowerCase();
-        const brand = producto.brand?.toLowerCase();
-        const search = this.busqueda.toLowerCase();
+      const title = producto.title?.toLowerCase();
+      const brand = producto.brand?.toLowerCase();
+      const search = this.busqueda.toLowerCase();
 
-        const categoryMatch = this.categoriesFilter.size === 0 ||
-            (producto.category && this.categoriesFilter.has(producto.category));
+      const categoryMatch = this.categoriesFilter.size === 0 ||
+        (producto.category && this.categoriesFilter.has(producto.category));
 
-        return categoryMatch && (title?.includes(search) || brand?.includes(search));
+      return categoryMatch && (title?.includes(search) || brand?.includes(search));
     });
-}
+  }
 
 
   public cargar(producto: Product) {
-    this.productoSeleccionado = producto; // Cuando se hace clic en un producto, se asigna a productoSeleccionado
-  }
-
-  public cerrar() {
-    this.productoSeleccionado = null; // Para cerrar el producto seleccionado, asigna null a productoSeleccionado
-  }
-
-  public agregarAlCarrito(producto: Product){
-    this.carrito.push(this.productoSeleccionado!);
+    let dialogRef = this.dialog.open(ProductoPopupComponent, { data: producto, height: '50rem', width: '50rem', backdropClass: "background-dialog" });
   }
 
 }

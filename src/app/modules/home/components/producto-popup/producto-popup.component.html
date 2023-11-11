@@ -1,0 +1,22 @@
+<div class="conteiner">
+
+    <div class="product">
+
+        <button class="close" (click)="cerrar()">X</button>
+
+        <img src="{{data.images![0]}}">
+
+        <h2>{{ data.title }}</h2>
+
+        <h3>Marca: {{data.brand}}</h3>
+
+        <p>Descripción: {{data.description}}</p>
+
+        <p><span>$ {{ data.price }}</span></p>
+
+        <button> COMPRAR </button>
+
+        <button (click)="agregarAlCarrito(data)">AGREGAR AL CARRITO</button>
+    </div>
+
+</div>

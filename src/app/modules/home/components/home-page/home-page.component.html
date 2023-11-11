@@ -13,7 +13,8 @@
             </label>
             <br>
             <label>
-                <input type="checkbox" (change)="toggleCategory('fragrances')"> <p>Fragrances</p>
+                <input type="checkbox" (change)="toggleCategory('fragrances')">
+                <p>Fragrances</p>
             </label>
             <br>
             <label>
@@ -21,11 +22,13 @@
             </label>
             <br>
             <label>
-                <input type="checkbox" (change)="toggleCategory('groceries')"> <p>Groceries</p>
+                <input type="checkbox" (change)="toggleCategory('groceries')">
+                <p>Groceries</p>
             </label>
             <br>
             <label>
-                <input type="checkbox" (change)="toggleCategory('home-decoration')"> <p>Home-Decoration</p>
+                <input type="checkbox"
+                    (change)="toggleCategory('home-decoration')"> <p>Home-Decoration</p>
             </label>
         </div>
     </section>
@@ -51,25 +54,9 @@
             </div>
         </div>
 
-        <div class="seleccion" id="seleccion" *ngIf="productoSeleccionado">
-            <div class="cerrar" (click)="cerrar()">
-                &#x2715;
-            </div>
-            <div class="info">
-                <img src="{{productoSeleccionado.images![0]}}" alt id="img">
-                <h2 id="modelo">{{ productoSeleccionado.title }}</h2>
-                <h3 id="marca">Marca: {{productoSeleccionado.brand}}</h3>
-                <p id="descripcion">Descripción:
-                    {{productoSeleccionado.description}}</p>
-                <span class="precio" id="precio">$ {{ productoSeleccionado.price
-                    }}</span>
-                <button (click)="agregarAlCarrito(productoSeleccionado)">AGREGAR
-                    AL
-                    CARRITO</button>
-            </div>
-        </div>
+        <app-footer></app-footer>
 
     </section>
 </div>
 
-<app-footer></app-footer>
+

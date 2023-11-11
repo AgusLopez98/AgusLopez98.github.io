@@ -44,11 +44,6 @@
           "number": 123123,
           "security_code": 23,
           "expiration": "12"
-        },
-        {
-          "number": 1233,
-          "security_code": 3123123,
-          "expiration": "1231-03"
         }
       ],
       "cart": null

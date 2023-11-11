@@ -42,7 +42,7 @@ export class Cart implements ICart{
     id: number | null;
     userId: number | null;
     date: string | null;
-    products: IProduct[] | null;
+    products: Product[] | null;
     total: number | null;
 
     constructor(cart?: any){

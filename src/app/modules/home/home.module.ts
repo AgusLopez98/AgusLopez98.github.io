@@ -6,11 +6,13 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { AuthModule } from '../auth/auth.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { FormsModule } from '@angular/forms';
+import { ProductoPopupComponent } from './components/producto-popup/producto-popup.component';
 
 
 @NgModule({
   declarations: [
-    HomePageComponent
+    HomePageComponent,
+    ProductoPopupComponent
   ],
   imports: [
     CommonModule,
