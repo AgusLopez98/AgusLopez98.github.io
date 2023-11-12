@@ -8,12 +8,21 @@ export class DataService {
   constructor() { }
 
   private data: any;
+  private carrito: Array<any> = [];
 
   public setData(data: any){
     this.data = data;
   }
 
-  getData(){
+  public getData(){
     return this.data;
+  }
+
+  public setProducto(producto: any){
+    this.carrito.push(producto)
+  }
+
+  public getCarrito(){
+    return this.carrito;
   }
 }

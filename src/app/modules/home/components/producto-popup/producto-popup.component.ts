@@ -1,6 +1,7 @@
 import { Component, Inject, inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { Product } from 'src/app/core/models';
+import { DataService } from 'src/app/core/services/data.service';
 
 @Component({
   selector: 'app-producto-popup',
@@ -9,17 +10,18 @@ import { Product } from 'src/app/core/models';
 })
 export class ProductoPopupComponent {
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any, private dialogRef: MatDialogRef<ProductoPopupComponent>) {}
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any, private dialogRef: MatDialogRef<ProductoPopupComponent>, private dataService: DataService) { }
 
-  public carrito: Array<Product> = [];
-
-  public cerrar(){
+  public cerrar() {
     this.dialogRef.close();
-    this.data = null;
   }
-  
+
   public agregarAlCarrito(producto: Product) {
-    this.carrito.push(this.data!);
-    this.data = null;
+    if (producto != null) {
+      this.dataService.setProducto(producto);
+      this.cerrar();
+    } else {
+      alert('Error en compra del producto.');
+    }
   }
 }

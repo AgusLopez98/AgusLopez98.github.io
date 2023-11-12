@@ -23,7 +23,7 @@ export class UsersService {
         } else {
           // El mail no existe, entonces se registra
           return this.http.post<boolean>(`${this.baseURL}/users`, user).pipe(
-            map(resp => true),
+            map(resp => {return true}),
             catchError(error => of(false))
           );
         }
