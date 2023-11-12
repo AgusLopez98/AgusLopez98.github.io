@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 5rem;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 70rem;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    font-size: 1.5rem;
+}
+
+td div {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente los elementos hijos */
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+tr button {
+    background-color: #ff5555;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+tr button:hover {
+    background-color: #ff3333;
+}
+
+.container-compra {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.compra {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 3rem;
+    width: 15rem;
+    font-size: 1.5rem;
+}
+
+.compra:hover {
+    background-color: #5dd863;
+}

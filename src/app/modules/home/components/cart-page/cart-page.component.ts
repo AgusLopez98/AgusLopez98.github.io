@@ -23,4 +23,12 @@ export class CartPageComponent implements OnInit{
   public listarCarrito(){
     this.carrito = this.dataService.getCarrito();
   }
+
+  public eliminarProducto(producto: Product){
+    const index = this.carrito.indexOf(producto);
+
+    if(index !== -1){
+      this.carrito.splice(index,1);
+    }
+  }
 }

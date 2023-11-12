@@ -1,11 +1,11 @@
 <nav class="navbar">
     <button (click)="toLanding()" class="logoButton"><img src="../../../../assets/logo navbar.png" alt="" class="logo"></button>
     <div class="buttons">
-        <button class="btn" *ngIf="ocultarLogin" (click)="toLogin()">Loguear</button>
-        <button class="btn" *ngIf="ocultarRegister" (click)="toRegister()">Registrarse</button>
-        <button class="btn" *ngIf="ocultarHome" (click)="toHome()">Home</button>
-        <button class="btn" *ngIf="ocultarProfile" (click)="toProfile()">{{user.name}} {{user.lastName}}</button>
-        <button class="btn" *ngIf="ocultarCarrito" (click)="toCart()">Carrito</button>
-        <button class="btn" *ngIf="ocultarContacto" (click)="toContact()">Contacto</button>
+        <button *ngIf="ocultarLogin" (click)="toLogin()">Loguear</button>
+        <button *ngIf="ocultarRegister" (click)="toRegister()">Registrarse</button>
+        <button class="btn-home" *ngIf="ocultarHome" (click)="toHome()"></button>
+        <button *ngIf="ocultarProfile" (click)="toProfile()">{{user.name}} {{user.lastName}}</button>
+        <button class="btn-cart" *ngIf="ocultarCarrito" (click)="toCart()"></button>
+        <button *ngIf="ocultarContacto" (click)="toContact()">Contacto</button>
     </div>
 </nav>

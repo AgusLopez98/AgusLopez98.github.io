@@ -9,7 +9,7 @@
 .logoButton {
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   text-align: center;
   background-color: transparent;
   padding: 3px;
@@ -26,7 +26,7 @@
   display: flex;
 }
 
-.btn {
+button {
   background-color: #a360c2;
   color: white;
   border: none;
@@ -35,6 +35,20 @@
   cursor: pointer;
 }
 
-.btn:hover {
+button:not(.logoButton):hover {
   background-color: #aa73c4;
+}
+
+.btn-cart {
+  width: 40px;
+  height: 40px;
+  background-image: url('../../../../assets/carrito.png');
+  background-size: cover;
+}
+
+.btn-home {
+  width: 40px;
+  height: 40px;
+  background-image: url('../../../../assets/tienda.png');
+  background-size: cover;
 }
