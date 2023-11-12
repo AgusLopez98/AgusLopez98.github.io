@@ -4,7 +4,10 @@
 
         <button class="close" (click)="cerrar()">X</button>
 
-        <img src="{{data.images![0]}}">
+        <button class="prev-button" (click)="cambiarImagen(-1)">&#8249;</button>
+        <img src="{{ data.images[currentImageIndex] }}">
+        <button class="next-button" (click)="cambiarImagen(1)">&#8250;</button>
+          
 
         <h2>{{ data.title }}</h2>
 

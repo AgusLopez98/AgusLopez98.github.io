@@ -12,6 +12,12 @@ export class ProductoPopupComponent {
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: any, private dialogRef: MatDialogRef<ProductoPopupComponent>, private dataService: DataService) { }
 
+  currentImageIndex = 0;
+
+  cambiarImagen(direccion: number) {
+    this.currentImageIndex = (this.currentImageIndex + direccion + this.data.images.length) % this.data.images.length;
+  }
+
   public cerrar() {
     this.dialogRef.close();
   }
