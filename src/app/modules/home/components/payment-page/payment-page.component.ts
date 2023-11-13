@@ -22,11 +22,15 @@ export class PaymentPageComponent implements OnInit{
     this.cart.products = this.dataService.getCarrito();
     this.cart.total = this.getTotal();
     this.cart.userId = this.user.id;
-
-    this.user.cart?.push(this.cart);
   }
 
   public realizarCompra(){
+
+    if (!this.user.cart) {
+      this.user.cart = [];
+    }
+    this.user.cart.push(this.cart);
+
     this.userService.updateUserToApi(this.user).subscribe({
       next:(resp)=>{
         if(resp){
@@ -46,6 +50,8 @@ export class PaymentPageComponent implements OnInit{
 
       error: (error=>{console.log(error);})
     })
+
+    alert('compra reliazada con exito | Muchas gracias.')
   }
 
   public getTotal(): number{
