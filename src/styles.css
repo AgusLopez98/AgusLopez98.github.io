@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,500&display=swap');
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -9,16 +10,32 @@ html, body {
 }
 
 body {
-    background: white;
     background-repeat: no-repeat;
     background-size: cover;
+    background: rgb(144, 144, 144);
+    background: linear-gradient(270deg, rgba(144, 144, 144, 1) 0%, rgba(230, 230, 230, 1) 15%, rgba(255, 255, 255, 1) 50%, rgba(230, 230, 230, 1) 85%, rgba(144, 144, 144, 1) 100%);
 }
 
 button {
     font-family: 'Chakra Petch';
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

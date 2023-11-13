@@ -5,6 +5,7 @@
 
 .container-card {
     max-width: 800px;
+    width: 50%;
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -12,7 +13,7 @@
     border-radius: 8px;
 }
 
-.container-card h2 {
+.container-card h2, h4{
     text-align: center;
     color: #333;
 }
@@ -21,18 +22,34 @@
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .container-card th,
 td {
     padding: 12px;
     text-align: left;
+}
+
+.container-card tr {
     border-bottom: 1px solid #ddd;
 }
 
 .container-card label {
     display: block;
     cursor: pointer;
+    padding: 2rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.container-card div {
+    width: 100%;
+    padding:0 15% 0 13.5%;
+}
+
+.container-card div:hover:not(label) {
+    background-color: rgba(105, 105, 105, 0.443);
 }
 
 .container-card input[type="radio"] {
@@ -46,9 +63,11 @@ td {
 
 .container-total {
     background-color: rgb(242, 242, 242);
+    margin: 20px auto;
     width: 20%;
     height: auto;
     margin-right: 10rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.452);
 }
 
 .container-total hr {
@@ -66,9 +85,30 @@ td {
     margin: 20px auto;
 }
 
+p, span{
+    font-size: 1rem;
+}
+
 .space {
     display: flex;
     justify-content: space-between;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 3rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #5dd863;
 }

@@ -53,7 +53,9 @@ export class PaymentPageComponent implements OnInit{
 
     this.dataService.setEmpty();
 
-    alert('compra reliazada con exito - Muchas gracias.')
+    alert('compra reliazada con exito - Muchas gracias.');
+
+    this.router.navigate(['/home']);
   }
 
   public getTotal(): number{

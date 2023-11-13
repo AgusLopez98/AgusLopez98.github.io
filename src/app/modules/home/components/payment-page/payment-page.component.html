@@ -5,19 +5,23 @@
     <div class="container-card">
         <h2>¿Como queres pagar?</h2>
 
+        <h4>Debito o Credito</h4>
         <table>
             <thead>
                 <tr>
-                    <th>Debito o Credito</th>
+                    <th>Numero</th>
+                    <th>Fecha expiracion</th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let card of user.card">
-                    <label for="radio{{card.number}}">
-                        <td>{{card.number}}</td>
-                        <td>{{card.expiration}}</td>
-                        <td><input type="radio" name="card" id="radio{{card.number}}"></td>
-                    </label>
+                    <div>
+                        <label for="radio{{card.number}}">
+                            <td>{{card.number}}</td>
+                            <td>{{card.expiration}}</td>
+                            <td><input type="radio" name="card" id="radio{{card.number}}"></td>
+                        </label>
+                    </div>
                 </tr>
             </tbody>
         </table>
