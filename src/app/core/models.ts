@@ -1,3 +1,4 @@
+import { Data } from "@angular/router";
 import { ICard, IProduct, IUser, ICart } from "./interfaces";
 
 export class Product implements IProduct{

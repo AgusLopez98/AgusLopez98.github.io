@@ -25,7 +25,8 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="password"],
-input[type="number"] {
+input[type="number"],
+input[type="month"] {
     width: 97%;
     padding: 10px;
     margin-bottom: 15px;
