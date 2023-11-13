@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProfilePageComponent } from './components/profile-page/profile-page.component';
 import { ModifyUserPageComponent } from './components/modify-user-page/modify-user-page.component';
 import { ModifyCardsPageComponent } from './components/modify-cards-page/modify-cards-page.component';
+import { HistoryPageComponent } from './components/history-page/history-page.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'cards',
     component: ModifyCardsPageComponent
+  },
+  {
+    path: 'history',
+    component: HistoryPageComponent
   }
 ];
 

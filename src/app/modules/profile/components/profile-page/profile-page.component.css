@@ -34,6 +34,11 @@
   padding-right: 11rem;
 }
 
+.history-button{
+  background-image: url('../../../../../assets/historySearch.png');
+  padding-right: 11rem;
+}
+
 .custom-button:hover {
   background-color: #ececec;
 }

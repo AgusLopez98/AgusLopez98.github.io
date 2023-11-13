@@ -1,0 +1,55 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+table {
+    padding-left: 4.5rem;
+}
+
+td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+td label {
+    padding-left: 20rem;
+}
+
+td div {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.space p, span {
+    font-size: 1rem;
+}

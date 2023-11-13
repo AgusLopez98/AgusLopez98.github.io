@@ -18,4 +18,8 @@ export class ProfilePageComponent {
   public toModifyCards(){
     this.router.navigate(['/profile/cards']);
   }
+
+  public toHistory(){
+    this.router.navigate(['/profile/history']);
+  }
 }

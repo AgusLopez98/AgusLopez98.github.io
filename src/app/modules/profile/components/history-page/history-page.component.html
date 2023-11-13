@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+
+<div>
+
+    <h2>Mis Compras</h2>
+
+    <div class="container" *ngFor="let carrito of user.cart">
+
+        <div class="space">
+            <p>Fecha: {{carrito.date}}</p>
+            <span>Total: $ {{carrito.total}}.00</span>
+        </div>
+
+        <hr>
+
+        <table>
+            <tr *ngFor="let product of carrito.products">
+                <td><div><img src="{{product.images![0]}}"> <span>{{product.title}}</span></div></td>
+                <td><label>$ {{product.price}}.00</label></td>
+            </tr>
+        </table>
+        
+    </div>
+    
+</div>
+
+<app-footer></app-footer>
