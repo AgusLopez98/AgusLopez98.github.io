@@ -51,7 +51,9 @@ export class PaymentPageComponent implements OnInit{
       error: (error=>{console.log(error);})
     })
 
-    alert('compra reliazada con exito | Muchas gracias.')
+    this.dataService.setEmpty();
+
+    alert('compra reliazada con exito - Muchas gracias.')
   }
 
   public getTotal(): number{

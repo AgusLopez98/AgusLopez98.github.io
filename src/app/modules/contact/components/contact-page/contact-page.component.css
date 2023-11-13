@@ -20,6 +20,7 @@
 
 .campo label {
     flex-basis: 8rem;
+    font-size: 1.3rem;
 }
 
 input:not([type="radio"], [type="submit"]),
