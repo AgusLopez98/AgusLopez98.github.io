@@ -40,7 +40,6 @@ td {
 td div {
     display: flex;
     align-items: center;
-    /* Centra verticalmente los elementos hijos */
 }
 
 img {
@@ -64,9 +63,21 @@ tr button:hover {
 
 .container-compra {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 1rem;
     margin-top: 1rem;
+}
+
+.container-compra p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.container-compra span {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: #ff3333;
 }
 
 .compra {

@@ -1,0 +1,74 @@
+.div-pantalla {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-card {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.container-card h2 {
+    text-align: center;
+    color: #333;
+}
+
+.container-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.container-card th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.container-card label {
+    display: block;
+    cursor: pointer;
+}
+
+.container-card input[type="radio"] {
+    margin-right: 5px;
+}
+
+.container-card input[type="radio"]:checked+label {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.container-total {
+    background-color: rgb(242, 242, 242);
+    width: 20%;
+    height: auto;
+    margin-right: 10rem;
+}
+
+.container-total hr {
+    width: 90%;
+    border: none;
+    height: 1px;
+    background-color: #acacac53;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container-total h2 {
+    color: #4b4b4b;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}

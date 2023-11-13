@@ -19,16 +19,26 @@ export class CartPageComponent implements OnInit{
   }
 
   public carrito: Array<Product> = [];
+  public total: number = 0;
 
   public listarCarrito(){
     this.carrito = this.dataService.getCarrito();
+
+    this.carrito.forEach(producto => {
+      this.total = producto.price! + this.total;
+    });
   }
 
   public eliminarProducto(producto: Product){
     const index = this.carrito.indexOf(producto);
 
     if(index !== -1){
+      this.total = this.total - this.carrito[index].price!;
       this.carrito.splice(index,1);
     }
+  }
+
+  public irPago(){
+    this.router.navigate(['/home/payment']);
   }
 }

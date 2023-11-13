@@ -9,6 +9,7 @@ export class DataService {
 
   private data: any;
   private carrito: Array<any> = [];
+  private producto: any;
 
   public setData(data: any){
     this.data = data;
@@ -18,11 +19,23 @@ export class DataService {
     return this.data;
   }
 
-  public setProducto(producto: any){
+  public setEmpty(){
+    this.carrito = [];
+  }
+
+  public setCarrito(producto: any){
     this.carrito.push(producto)
   }
 
   public getCarrito(){
     return this.carrito;
+  }
+
+  public setProducto(producto: any){
+    this.producto = producto;
+  }
+
+  public getProducto(){
+    return this.producto;
   }
 }

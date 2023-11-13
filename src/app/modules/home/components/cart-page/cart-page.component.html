@@ -22,7 +22,8 @@
         </table>
 
         <div class="container-compra" *ngIf="carrito.length !== 0">
-            <button class="compra">Comprar</button>
+            <p>Total: <span>$ {{total}}.00</span></p>
+            <button class="compra" (click)="irPago()" >Comprar</button>
         </div>
         
     </div>

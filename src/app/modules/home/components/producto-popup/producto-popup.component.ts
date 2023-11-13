@@ -1,5 +1,6 @@
 import { Component, Inject, inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 import { Product } from 'src/app/core/models';
 import { DataService } from 'src/app/core/services/data.service';
 
@@ -10,7 +11,7 @@ import { DataService } from 'src/app/core/services/data.service';
 })
 export class ProductoPopupComponent {
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any, private dialogRef: MatDialogRef<ProductoPopupComponent>, private dataService: DataService) { }
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any, private dialogRef: MatDialogRef<ProductoPopupComponent>, private dataService: DataService, private router: Router) { }
 
   currentImageIndex = 0;
 
@@ -22,12 +23,18 @@ export class ProductoPopupComponent {
     this.dialogRef.close();
   }
 
-  public agregarAlCarrito(producto: Product) {
-    if (producto != null) {
-      this.dataService.setProducto(producto);
+  public agregarAlCarrito() {
+    if (this.data != null) {
+      this.dataService.setCarrito(this.data);
       this.cerrar();
     } else {
       alert('Error en compra del producto.');
     }
+  }
+
+  public irPago(){
+    this.dataService.setEmpty();
+    this.agregarAlCarrito();
+    this.router.navigate(['/home/payment']);
   }
 }

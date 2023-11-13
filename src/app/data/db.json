@@ -36,9 +36,33 @@
       "dni": 41717515,
       "card": [
         {
-          "number": 32323,
-          "security_code": 1212,
-          "expiration": "1212"
+          "number": 1234123412341234,
+          "security_code": 123,
+          "expiration": "2020-02"
+        },
+        {
+          "number": 4321432143214321,
+          "security_code": 123,
+          "expiration": "3030-04"
+        }
+      ],
+      "cart": null
+    },
+    {
+      "id": 3,
+      "name": "rocio",
+      "lastName": "liboreira",
+      "email": "rociolibreria238@gmail.com",
+      "password": "thiago22",
+      "province": "Buenos Aires",
+      "city": "Miramar",
+      "street": "41 1363",
+      "dni": 44050532,
+      "card": [
+        {
+          "number": 12783678456821736,
+          "security_code": 81,
+          "expiration": "12/12"
         }
       ],
       "cart": null

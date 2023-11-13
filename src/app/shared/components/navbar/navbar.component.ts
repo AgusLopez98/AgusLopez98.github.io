@@ -24,19 +24,19 @@ export class NavbarComponent {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
 
-        if (event.url === '/auth/login' || event.url === '/home' || event.url === '/profile' || event.url === '/profile/user' || event.url === '/profile/cards' || event.url === '/home/cart') {
+        if (event.url === '/auth/login' || event.url === '/home' || event.url === '/profile' || event.url === '/profile/user' || event.url === '/profile/cards' || event.url === '/home/cart' || event.url === '/home/payment') {
           this.ocultarLogin = false;
         } else {
           this.ocultarLogin = true;
         }
         
-        if(event.url === '/auth/register' || event.url === '/home' || event.url === '/profile' || event.url === '/profile/user' || event.url === '/profile/cards' || event.url === '/home/cart'){
+        if(event.url === '/auth/register' || event.url === '/home' || event.url === '/profile' || event.url === '/profile/user' || event.url === '/profile/cards' || event.url === '/home/cart' || event.url === '/home/payment'){
           this.ocultarRegister = false;
         } else {
           this.ocultarRegister = true;
         }
  
-        if(event.url === '/profile' || event.url === '/profile/user' || event.url === '/profile/cards' || event.url === '/home' || event.url === '/home/cart'){
+        if(event.url === '/profile' || event.url === '/profile/user' || event.url === '/profile/cards' || event.url === '/home' || event.url === '/home/cart' || event.url === '/home/payment'){
           this.ocultarProfile = true;
           this.ocultarCarrito = true;
         } else {
@@ -44,7 +44,7 @@ export class NavbarComponent {
           this.ocultarCarrito = false;
         }
 
-        if(event.url === '/profile' || event.url === '/profile/user' || event.url === '/profile/cards' || event.url === '/home/cart'){
+        if(event.url === '/profile' || event.url === '/profile/user' || event.url === '/profile/cards' || event.url === '/home/cart' || event.url === '/home/payment'){
           this.ocultarHome = true;
         } else {
           this.ocultarHome = false;
