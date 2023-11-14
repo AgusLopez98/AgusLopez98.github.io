@@ -1,4 +1,109 @@
 {
-  "users": [],
-  "carts": []
+  "users": [
+    {
+      "id": 1,
+      "name": "ignacio",
+      "lastName": "lopez",
+      "email": "agustin.lopez.9898@gmail.com",
+      "password": "123",
+      "province": "Buenos Aires",
+      "city": "Miramar",
+      "street": "41",
+      "dni": 41717515,
+      "card": [
+        {
+          "number": 4321432143214321,
+          "security_code": 321,
+          "expiration": "2030-01"
+        }
+      ],
+      "cart": [
+        {
+          "id": null,
+          "userId": 1,
+          "date": "2023-11-13T23:58:22.552Z",
+          "products": [
+            {
+              "id": 2,
+              "title": "iPhone X",
+              "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+              "price": 899,
+              "discountPercentage": 17.94,
+              "rating": 4.44,
+              "stock": 34,
+              "brand": "Apple",
+              "category": "smartphones",
+              "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+              "images": [
+                "https://i.dummyjson.com/data/products/2/1.jpg",
+                "https://i.dummyjson.com/data/products/2/2.jpg",
+                "https://i.dummyjson.com/data/products/2/3.jpg",
+                "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+              ]
+            }
+          ],
+          "total": 899
+        },
+        {
+          "id": null,
+          "userId": 1,
+          "date": "2023-11-14T00:00:51.629Z",
+          "products": [
+            {
+              "id": 3,
+              "title": "Samsung Universe 9",
+              "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+              "price": 1249,
+              "discountPercentage": 15.46,
+              "rating": 4.09,
+              "stock": 36,
+              "brand": "Samsung",
+              "category": "smartphones",
+              "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+              "images": [
+                "https://i.dummyjson.com/data/products/3/1.jpg"
+              ]
+            },
+            {
+              "id": 2,
+              "title": "iPhone X",
+              "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+              "price": 899,
+              "discountPercentage": 17.94,
+              "rating": 4.44,
+              "stock": 34,
+              "brand": "Apple",
+              "category": "smartphones",
+              "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+              "images": [
+                "https://i.dummyjson.com/data/products/2/1.jpg",
+                "https://i.dummyjson.com/data/products/2/2.jpg",
+                "https://i.dummyjson.com/data/products/2/3.jpg",
+                "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+              ]
+            },
+            {
+              "id": 5,
+              "title": "Huawei P30",
+              "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+              "price": 499,
+              "discountPercentage": 10.58,
+              "rating": 4.09,
+              "stock": 32,
+              "brand": "Huawei",
+              "category": "smartphones",
+              "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+              "images": [
+                "https://i.dummyjson.com/data/products/5/1.jpg",
+                "https://i.dummyjson.com/data/products/5/2.jpg",
+                "https://i.dummyjson.com/data/products/5/3.jpg"
+              ]
+            }
+          ],
+          "total": 2647
+        }
+      ]
+    }
+  ],
+  "cart": []
 }
