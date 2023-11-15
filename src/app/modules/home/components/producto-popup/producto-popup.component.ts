@@ -1,7 +1,6 @@
 import { Component, Inject, inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
-import { Product } from 'src/app/core/models';
 import { DataService } from 'src/app/core/services/data.service';
 
 @Component({

@@ -1,7 +1,6 @@
 import { Component, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from 'src/app/core/models';
-import { ApiService } from 'src/app/core/services/api.service';
 import { DataService } from 'src/app/core/services/data.service';
 import { UsersService } from 'src/app/core/services/users.service';
 

@@ -1,35 +1,12 @@
-/* div {
-    display: flex;
-}
-
-.column {
-    flex: 1;
-    padding: 10px;
-}
-
-p {
-    text-align: center;
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 6rem;
-    color: #612179;
-    margin: 15rem 10rem 0 0;
-}
-
-img {
-    width: 40rem;
-    height: 40rem;
-    margin-left: 10rem;
-} */
-
 .contenedor-imagen {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ajusta la altura según tus necesidades, esto hace que el contenedor ocupe el 100% del viewport height */
+    height: 100vh; 
 }
 
 .contenedor-imagen img {
-    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
-    max-height: 100%; /* Asegura que la imagen no supere la altura del contenedor */
+    max-width: 100%;
+    max-height: 100%;
 }
 
