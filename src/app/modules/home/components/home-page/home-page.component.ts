@@ -23,7 +23,7 @@ export class HomePageComponent implements OnInit {
   constructor(private apiService: ApiService, private dialog: MatDialog) { }
 
   public getProducts() {
-    this.apiService.getProductsFromAPI().subscribe({
+    this.apiService.getProductsFromJSON().subscribe({
       next: (resp: any) => {
         // Verifica si 'resp' tiene una propiedad 'products' que es un array
         if (resp && Array.isArray(resp.products)) {
