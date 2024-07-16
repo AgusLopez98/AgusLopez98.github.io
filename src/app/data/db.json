@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "ignacio",
       "lastName": "lopez",
       "email": "agustin.lopez.9898@gmail.com",
@@ -129,6 +129,25 @@
           "total": 1499
         }
       ]
+    },
+    {
+      "id": null,
+      "name": "fede",
+      "lastName": "falo",
+      "email": "federicofalotiche@gmail.com",
+      "password": "asd",
+      "province": "buenos aires",
+      "city": null,
+      "street": null,
+      "dni": null,
+      "card": [
+        {
+          "number": null,
+          "security_code": null,
+          "expiration": null
+        }
+      ],
+      "cart": null
     }
   ],
   "cart": []

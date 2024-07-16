@@ -22,9 +22,9 @@ export class LoginComponent {
   public initSession(){
     this.UserService.getUserByCredentials(this.email!,this.password!).subscribe({
       next: (resp) =>{
-        if(resp.length == 1){
+        if(resp != null){
           this.router.navigate(['/home']);
-          this.user = resp[0];
+          this.user = resp;
           this.dataService.setData(this.user);
         }else{
           alert("Usuario no encontrado, intente nuevamente")

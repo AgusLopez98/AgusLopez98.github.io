@@ -33,8 +33,18 @@ export class UsersService {
   }
 
   //loguear usuario
-  public getUserByCredentials(email: string, password: string): Observable<User[]> {
-    return this.http.get<User[]>(`${this.baseURL}/users?email=${email}&password=${password}`)
+  public getUserByCredentials(email: string, password: string): Observable<User | null> {
+    return this.http.get<User[]>(`${this.baseURL}/users?email=${email}&password=${password}`).pipe(
+      map(users =>{
+        const user = users[0];
+        if(user && user.password == password) {
+          return user
+        } else {
+          return null
+        }
+      }), catchError(error => of (null)
+      )
+    )
   }
 
   //modificar usuario
