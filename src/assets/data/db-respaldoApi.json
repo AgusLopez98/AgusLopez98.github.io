@@ -10,13 +10,13 @@
         "stock": 94,
         "brand": "Apple",
         "category": "smartphones",
-        "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/1/1- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/1/1.jpg",
-          "https://i.dummyjson.com/data/products/1/2.jpg",
-          "https://i.dummyjson.com/data/products/1/3.jpg",
-          "https://i.dummyjson.com/data/products/1/4.jpg",
-          "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+          "../../assets/productos/1/1- thumbnail.jpg",
+          "../../assets/productos/1/1- image1.jpg",
+          "../../assets/productos/1/1- image2.jpg",
+          "../../assets/productos/1/1- image3.jpg"
+          
         ]
       },
       {
@@ -29,32 +29,36 @@
         "stock": 34,
         "brand": "Apple",
         "category": "smartphones",
-        "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/2/2- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/2/1.jpg",
-          "https://i.dummyjson.com/data/products/2/2.jpg",
-          "https://i.dummyjson.com/data/products/2/3.jpg",
-          "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          "../../assets/productos/2/2- thumbnail.jpg",
+          "../../assets/productos/2/2- image1.jpg",
+          "../../assets/productos/2/2- image2.jpg",
+          "../../assets/productos/2/2- image3.jpg",
+          "../../assets/productos/2/2- image4.jpg"
         ]
       },
       {
         "id": 3,
-        "title": "Samsung Universe 9",
-        "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+        "title": "Galaxy Note 10",
+        "description": "The Samsung Galaxy Note 10 features a 6.3-inch display, triple cameras, and an S Pen, powered by the Exynos 9825/Snapdragon 855 processor",
         "price": 1249,
         "discountPercentage": 15.46,
         "rating": 4.09,
         "stock": 36,
         "brand": "Samsung",
         "category": "smartphones",
-        "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/3/3- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/3/1.jpg"
+          "../../assets/productos/3/3- thumbnail.jpg",
+          "../../assets/productos/3/3- image1.jpg",
+          "../../assets/productos/3/3- image2.jpg",
+          "../../assets/productos/3/3- image3.jpg"
         ]
       },
       {
         "id": 4,
-        "title": "OPPOF19",
+        "title": "F19",
         "description": "OPPO F19 is officially announced on April 2021.",
         "price": 280,
         "discountPercentage": 17.91,
@@ -62,18 +66,17 @@
         "stock": 123,
         "brand": "OPPO",
         "category": "smartphones",
-        "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/4/4- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/4/1.jpg",
-          "https://i.dummyjson.com/data/products/4/2.jpg",
-          "https://i.dummyjson.com/data/products/4/3.jpg",
-          "https://i.dummyjson.com/data/products/4/4.jpg",
-          "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          "../../assets/productos/4/4- thumbnail.jpg",
+          "../../assets/productos/4/4- image1.jpg",
+          "../../assets/productos/4/4- image2.jpg",
+          "../../assets/productos/4/4- image3.jpg"
         ]
       },
       {
         "id": 5,
-        "title": "Huawei P30",
+        "title": "P30",
         "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
         "price": 499,
         "discountPercentage": 10.58,
@@ -81,11 +84,14 @@
         "stock": 32,
         "brand": "Huawei",
         "category": "smartphones",
-        "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/5/5- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/5/1.jpg",
-          "https://i.dummyjson.com/data/products/5/2.jpg",
-          "https://i.dummyjson.com/data/products/5/3.jpg"
+          "../../assets/productos/5/5- thumbnail.jpg",
+          "../../assets/productos/5/5- image1.jpg",
+          "../../assets/productos/5/5- image2.jpg",
+          "../../assets/productos/5/5- image3.jpg",
+          "../../assets/productos/5/5- image4.jpg",
+          "../../assets/productos/5/5- image5.jpg"
         ]
       },
       {
@@ -98,12 +104,12 @@
         "stock": 83,
         "brand": "Apple",
         "category": "laptops",
-        "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+        "thumbnail": "../../assets/productos/6/6- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/6/1.png",
-          "https://i.dummyjson.com/data/products/6/2.jpg",
-          "https://i.dummyjson.com/data/products/6/3.png",
-          "https://i.dummyjson.com/data/products/6/4.jpg"
+          "../../assets/productos/6/6- thumbnail.jpg",
+          "../../assets/productos/6/6- image1.jpg",
+          "../../assets/productos/6/6- image2.jpg",
+          "../../assets/productos/6/6- image3.jpg"
         ]
       },
       {
@@ -116,12 +122,12 @@
         "stock": 50,
         "brand": "Samsung",
         "category": "laptops",
-        "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/7/7- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/7/1.jpg",
-          "https://i.dummyjson.com/data/products/7/2.jpg",
-          "https://i.dummyjson.com/data/products/7/3.jpg",
-          "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          "../../assets/productos/7/7- thumbnail.jpg",
+          "../../assets/productos/7/7- image1.jpg",
+          "../../assets/productos/7/7- image2.jpg",
+          "../../assets/productos/7/7- image3.jpg"
         ]
       },
       {
@@ -134,13 +140,13 @@
         "stock": 68,
         "brand": "Microsoft Surface",
         "category": "laptops",
-        "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/8/8- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/8/1.jpg",
-          "https://i.dummyjson.com/data/products/8/2.jpg",
-          "https://i.dummyjson.com/data/products/8/3.jpg",
-          "https://i.dummyjson.com/data/products/8/4.jpg",
-          "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+          "../../assets/productos/8/8- thumbnail.jpg",
+          "../../assets/productos/8/8- image1.jpg",
+          "../../assets/productos/8/8- image2.jpg",
+          "../../assets/productos/8/8- image3.jpg",
+          "../../assets/productos/8/8- image4.jpg"
         ]
       },
       {
@@ -153,13 +159,14 @@
         "stock": 96,
         "brand": "Infinix",
         "category": "laptops",
-        "thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/9/9- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/9/1.jpg",
-          "https://i.dummyjson.com/data/products/9/2.png",
-          "https://i.dummyjson.com/data/products/9/3.png",
-          "https://i.dummyjson.com/data/products/9/4.jpg",
-          "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
+          "../../assets/productos/9/9- thumbnail.jpg",
+          "../../assets/productos/9/9- image1.jpg",
+          "../../assets/productos/9/9- image2.jpg",
+          "../../assets/productos/9/9- image3.jpg",
+          "../../assets/productos/9/9- image4.jpg",
+          "../../assets/productos/9/9- image5.jpg"
         ]
       },
       {
@@ -172,105 +179,101 @@
         "stock": 89,
         "brand": "HP Pavilion",
         "category": "laptops",
-        "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
+        "thumbnail": "../../assets/productos/10/10- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/10/1.jpg",
-          "https://i.dummyjson.com/data/products/10/2.jpg",
-          "https://i.dummyjson.com/data/products/10/3.jpg",
-          "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
+          "../../assets/productos/10/10- thumbnail.jpg",
+          "../../assets/productos/10/10- image1.jpg",
+          "../../assets/productos/10/10- image2.jpg",
+          "../../assets/productos/10/10- image3.jpg",
+          "../../assets/productos/10/10- image4.jpg"
         ]
       },
       {
         "id": 11,
-        "title": "perfume Oil",
+        "title": "Acqua Di Gio",
         "description": "Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil",
-        "price": 13,
+        "price": 99,
         "discountPercentage": 8.4,
         "rating": 4.26,
         "stock": 65,
-        "brand": "Impression of Acqua Di Gio",
+        "brand": "Giorgio Armani",
         "category": "fragrances",
-        "thumbnail": "https://i.dummyjson.com/data/products/11/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/11/11- thumbnail.jpeg",
         "images": [
-          "https://i.dummyjson.com/data/products/11/1.jpg",
-          "https://i.dummyjson.com/data/products/11/2.jpg",
-          "https://i.dummyjson.com/data/products/11/3.jpg",
-          "https://i.dummyjson.com/data/products/11/thumbnail.jpg"
+          "../../assets/productos/11/11- thumbnail.jpeg",
+          "../../assets/productos/11/11- image1.jpg",
+          "../../assets/productos/11/11- image2.jpg",
+          "../../assets/productos/11/11- image3.jpg"
         ]
       },
       {
         "id": 12,
-        "title": "Brown Perfume",
+        "title": "Royal Mirage Unisex",
         "description": "Royal_Mirage Sport Brown Perfume for Men & Women - 120ml",
         "price": 40,
         "discountPercentage": 15.66,
         "rating": 4,
         "stock": 52,
-        "brand": "Royal_Mirage",
+        "brand": "Royal Mirage",
         "category": "fragrances",
-        "thumbnail": "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/12/12- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/12/1.jpg",
-          "https://i.dummyjson.com/data/products/12/2.jpg",
-          "https://i.dummyjson.com/data/products/12/3.png",
-          "https://i.dummyjson.com/data/products/12/4.jpg",
-          "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
+          "../../assets/productos/12/12- thumbnail.jpg",
+          "../../assets/productos/12/12- image1.jpeg",
+          "../../assets/productos/12/12- image2.jpg"
         ]
       },
       {
         "id": 13,
-        "title": "Fog Scent Xpressio Perfume",
+        "title": "Fogg Scent Xpressio",
         "description": "Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men",
         "price": 13,
         "discountPercentage": 8.14,
         "rating": 4.59,
         "stock": 61,
-        "brand": "Fog Scent Xpressio",
+        "brand": "Fogg Scent",
         "category": "fragrances",
-        "thumbnail": "https://i.dummyjson.com/data/products/13/thumbnail.webp",
+        "thumbnail": "../../assets/productos/13/13- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/13/1.jpg",
-          "https://i.dummyjson.com/data/products/13/2.png",
-          "https://i.dummyjson.com/data/products/13/3.jpg",
-          "https://i.dummyjson.com/data/products/13/4.jpg",
-          "https://i.dummyjson.com/data/products/13/thumbnail.webp"
+          "../../assets/productos/13/13- thumbnail.jpg",
+          "../../assets/productos/13/13- image1.jpg",
+          "../../assets/productos/13/13- image2.jpeg",
+          "../../assets/productos/13/13- image3.jpg"
         ]
       },
       {
         "id": 14,
-        "title": "Non-Alcoholic Concentrated Perfume Oil",
-        "description": "Original Al Munakh® by Mahal Al Musk | Our Impression of Climate | 6ml Non-Alcoholic Concentrated Perfume Oil",
+        "title": "Gucci Guilty",
+        "description": "Gucci Guilty for Men 3.0 oz Eau de Parfum Spray",
         "price": 120,
         "discountPercentage": 15.6,
         "rating": 4.21,
         "stock": 114,
-        "brand": "Al Munakh",
+        "brand": "Gucci",
         "category": "fragrances",
-        "thumbnail": "https://i.dummyjson.com/data/products/14/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/14/14- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/14/1.jpg",
-          "https://i.dummyjson.com/data/products/14/2.jpg",
-          "https://i.dummyjson.com/data/products/14/3.jpg",
-          "https://i.dummyjson.com/data/products/14/thumbnail.jpg"
+          "../../assets/productos/14/14- thumbnail.jpg",
+          "../../assets/productos/14/14- image1.jpg"
         ]
       },
       {
         "id": 15,
-        "title": "Eau De Perfume Spray",
-        "description": "Genuine  Al-Rehab spray perfume from UAE/Saudi Arabia/Yemen High Quality",
-        "price": 30,
+        "title": "Sauvage",
+        "description": "Sauvage by Christian Dior for men 3.0 oz Eau De Parfum Spray ",
+        "price": 125,
         "discountPercentage": 10.99,
-        "rating": 4.7,
+        "rating": 4.9,
         "stock": 105,
-        "brand": "Lord - Al-Rehab",
+        "brand": "Dior",
         "category": "fragrances",
-        "thumbnail": "https://i.dummyjson.com/data/products/15/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/15/15- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/15/1.jpg",
-          "https://i.dummyjson.com/data/products/15/2.jpg",
-          "https://i.dummyjson.com/data/products/15/3.jpg",
-          "https://i.dummyjson.com/data/products/15/4.jpg",
-          "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+          "../../assets/productos/15/15- thumbnail.jpg",
+          "../productos/15/15- image1.jpg",
+          "../productos/15/15- image2.jpg",
+          "../productos/15/15- image3.jpg",
+          "../productos/15/15- image4.jpg"
         ]
       },
       {

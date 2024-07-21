@@ -5,21 +5,27 @@
         <div>
             <h3>Categoria</h3>
             <label>
-                <input type="checkbox" (change)="toggleCategory('beauty')"><p>Belleza</p>
+                <input type="checkbox" (change)="toggleCategory('smartphones')"><p>Smartphones</p>
             </label>
             <br>
             <label>
-                <input type="checkbox" (change)="toggleCategory('furniture')"> <p>Muebles</p>
+                <input type="checkbox" (change)="toggleCategory('laptops')"> <p>Laptops</p>
             </label>
             <br>
             <label>
-                <input type="checkbox" (change)="toggleCategory('fragrances')">
-                <p>Fragancias</p>
+                <input type="checkbox" (change)="toggleCategory('fragrances')"><p>Fragancias</p>
             </label>
             <br>
             <label>
-                <input type="checkbox" (change)="toggleCategory('groceries')">
-                <p>Comestibles</p>
+                <input type="checkbox" (change)="toggleCategory('skincare')"><p>Cuidado de piel</p>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" (change)="toggleCategory('groceries')"><p>Comestibles</p>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" (change)="toggleCategory('home-decoration')"><p>Decoración del hogar</p>
             </label>
         </div>
     </section>
@@ -37,7 +43,7 @@
                 <div class="item" *ngFor="let producto of buscarProducto()"
                     (click)="cargar(producto)">
                     <div class="contenedor-foto">
-                        <img src="{{producto.images![0]}}" alt>
+                        <img src="{{producto.thumbnail}}" alt>
                     </div>
                     <p class="descripcion">{{ producto.title }}</p>
                     <span class="precio">$ {{ producto.price }}</span>
