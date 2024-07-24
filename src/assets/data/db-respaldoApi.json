@@ -286,13 +286,11 @@
         "stock": 110,
         "brand": "L'Oreal Paris",
         "category": "skincare",
-        "thumbnail": "https://i.dummyjson.com/data/products/16/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/16/16- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/16/1.png",
-          "https://i.dummyjson.com/data/products/16/2.webp",
-          "https://i.dummyjson.com/data/products/16/3.jpg",
-          "https://i.dummyjson.com/data/products/16/4.jpg",
-          "https://i.dummyjson.com/data/products/16/thumbnail.jpg"
+          "../../assets/productos/16/16- thumbnail.jpg",
+          "../../assets/productos/16/16- image1.jpeg",
+          "../../assets/productos/16/16- image2.jpeg"
         ]
       },
       {
@@ -305,12 +303,12 @@
         "stock": 78,
         "brand": "Hemani Tea",
         "category": "skincare",
-        "thumbnail": "https://i.dummyjson.com/data/products/17/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/17/17- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/17/1.jpg",
-          "https://i.dummyjson.com/data/products/17/2.jpg",
-          "https://i.dummyjson.com/data/products/17/3.jpg",
-          "https://i.dummyjson.com/data/products/17/thumbnail.jpg"
+          "../../assets/productos/17/17- thumbnail.jpg",
+          "../../assets/productos/17/17- image1.jpg",
+          "../../assets/productos/17/17- image2.jpg",
+          "../../assets/productos/17/17- image3.jpg"
         ]
       },
       {
@@ -323,13 +321,12 @@
         "stock": 88,
         "brand": "Dermive",
         "category": "skincare",
-        "thumbnail": "https://i.dummyjson.com/data/products/18/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/18/18- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/18/1.jpg",
-          "https://i.dummyjson.com/data/products/18/2.jpg",
-          "https://i.dummyjson.com/data/products/18/3.jpg",
-          "https://i.dummyjson.com/data/products/18/4.jpg",
-          "https://i.dummyjson.com/data/products/18/thumbnail.jpg"
+          "../../assets/productos/18/18- thumbnail.jpg",
+          "../../assets/productos/18/18- image1.jpg",
+          "../../assets/productos/18/18- image2.jpg",
+          "../../assets/productos/18/18- image3.jpg"
         ]
       },
       {
@@ -342,122 +339,121 @@
         "stock": 54,
         "brand": "ROREC White Rice",
         "category": "skincare",
-        "thumbnail": "https://i.dummyjson.com/data/products/19/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/19/19- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/19/1.jpg",
-          "https://i.dummyjson.com/data/products/19/2.jpg",
-          "https://i.dummyjson.com/data/products/19/3.png",
-          "https://i.dummyjson.com/data/products/19/thumbnail.jpg"
+          "../../assets/productos/19/19- thumbnail.jpg",
+          "../../assets/productos/19/19- image1.jpg",
+          "../../assets/productos/19/19- image2.jpg",
+          "../../assets/productos/19/19- image3.jpg"
         ]
       },
       {
         "id": 20,
-        "title": "Freckle Treatment Cream- 15gm",
-        "description": "Fair & Clear is Pakistan's only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.",
-        "price": 70,
+        "title": "Retinol Cream for Face",
+        "description": "Moisturizer for Women and Men, Day and Night Anti-Aging Moisturizer for All Skin Types.",
+        "price": 17,
         "discountPercentage": 16.99,
         "rating": 4.06,
         "stock": 140,
-        "brand": "Fair & Clear",
+        "brand": "Arvesa",
         "category": "skincare",
-        "thumbnail": "https://i.dummyjson.com/data/products/20/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/20/20- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/20/1.jpg",
-          "https://i.dummyjson.com/data/products/20/2.jpg",
-          "https://i.dummyjson.com/data/products/20/3.jpg",
-          "https://i.dummyjson.com/data/products/20/4.jpg",
-          "https://i.dummyjson.com/data/products/20/thumbnail.jpg"
+          "../../assets/productos/20/20- thumbnail.jpg",
+          "../../assets/productos/20/20- image1.jpg",
+          "../../assets/productos/20/20- image2.jpg",
+          "../../assets/productos/20/20- image3.jpg"
         ]
       },
       {
         "id": 21,
-        "title": "- Daal Masoor 500 grams",
-        "description": "Fine quality Branded Product Keep in a cool and dry place",
-        "price": 20,
+        "title": "Pistachio Mix 2.5oz",
+        "description": "A salty, savory, munchable side to your lunch is only a can of PLANTERS Salted Mixed Nuts away.",
+        "price": 13,
         "discountPercentage": 4.81,
         "rating": 4.44,
         "stock": 133,
-        "brand": "Saaf & Khaas",
+        "brand": "Planters",
         "category": "groceries",
-        "thumbnail": "https://i.dummyjson.com/data/products/21/thumbnail.png",
+        "thumbnail": "../../assets/productos/21/21- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/21/1.png",
-          "https://i.dummyjson.com/data/products/21/2.jpg",
-          "https://i.dummyjson.com/data/products/21/3.jpg"
+          "../../assets/productos/21/21- thumbnail.jpg",
+          "../../assets/productos/21/21- image1.jpg",
+          "../../assets/productos/21/21- image2.jpg"
         ]
       },
       {
         "id": 22,
-        "title": "Elbow Macaroni - 400 gm",
-        "description": "Product details of Bake Parlor Big Elbow Macaroni - 400 gm",
-        "price": 14,
+        "title": "Thin Spaghetti 16oz",
+        "description": "Everything you love about spaghetti but in a thinner version",
+        "price": 2.20,
         "discountPercentage": 15.58,
         "rating": 4.57,
         "stock": 146,
-        "brand": "Bake Parlor Big",
+        "brand": "Barilla",
         "category": "groceries",
-        "thumbnail": "https://i.dummyjson.com/data/products/22/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/22/22- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/22/1.jpg",
-          "https://i.dummyjson.com/data/products/22/2.jpg",
-          "https://i.dummyjson.com/data/products/22/3.jpg"
+          "../../assets/productos/22/22- thumbnail.jpg",
+          "../../assets/productos/22/22- image1.jpg",
+          "../../assets/productos/22/22- image2.jpg",
+          "../../assets/productos/22/22- image3.jpg"
         ]
       },
       {
         "id": 23,
-        "title": "Orange Essence Food Flavou",
-        "description": "Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item",
-        "price": 14,
+        "title": "Organic Ground Turmeric 1.6oz",
+        "description": "A world of flavor awaits. Let the culinary adventure begin.",
+        "price": 4.15,
         "discountPercentage": 8.04,
         "rating": 4.85,
         "stock": 26,
-        "brand": "Baking Food Items",
+        "brand": "The Spice Hunter",
         "category": "groceries",
-        "thumbnail": "https://i.dummyjson.com/data/products/23/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/23/23- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/23/1.jpg",
-          "https://i.dummyjson.com/data/products/23/2.jpg",
-          "https://i.dummyjson.com/data/products/23/3.jpg",
-          "https://i.dummyjson.com/data/products/23/4.jpg",
-          "https://i.dummyjson.com/data/products/23/thumbnail.jpg"
+          "../../assets/productos/23/23- thumbnail.jpg",
+          "../../assets/productos/23/23- image1.jpg",
+          "../../assets/productos/23/23- image2.jpg",
+          "../../assets/productos/23/23- image3.jpg"
         ]
       },
       {
         "id": 24,
-        "title": "cereals muesli fruit nuts",
-        "description": "original fauji cereal muesli 250gm box pack original fauji cereals muesli fruit nuts flakes breakfast cereal break fast faujicereals cerels cerel foji fouji",
-        "price": 46,
+        "title": "KitKat Chocolatey Breakfast Cereal 19.5oz",
+        "description": "Pieces shaped like little KIT KAT candy bars with a creamy coating and satisfying crunch make cereal breaks delicious.",
+        "price": 6.12,
         "discountPercentage": 16.8,
         "rating": 4.94,
         "stock": 113,
-        "brand": "fauji",
+        "brand": "General Mills",
         "category": "groceries",
-        "thumbnail": "https://i.dummyjson.com/data/products/24/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/24/24- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/24/1.jpg",
-          "https://i.dummyjson.com/data/products/24/2.jpg",
-          "https://i.dummyjson.com/data/products/24/3.jpg",
-          "https://i.dummyjson.com/data/products/24/4.jpg",
-          "https://i.dummyjson.com/data/products/24/thumbnail.jpg"
+          "../../assets/productos/24/24- thumbnail.jpg",
+          "../../assets/productos/24/24- image1.jpg",
+          "../../assets/productos/24/24- image2.jpg",
+          "../../assets/productos/24/24- image3.jpg",
+          "../../assets/productos/24/24- image4.jpg"
         ]
       },
       {
         "id": 25,
-        "title": "Gulab Powder 50 Gram",
-        "description": "Dry Rose Flower Powder Gulab Powder 50 Gram • Treats Wounds",
-        "price": 70,
+        "title": "Apple Cherry Juice 64oz",
+        "description": "Made With 100% Apple & Cherry Juices, No Added Sugar, Excellent Source Of Vitamin C.",
+        "price": 3.45,
         "discountPercentage": 13.58,
         "rating": 4.87,
         "stock": 47,
-        "brand": "Dry Rose",
+        "brand": "Mott's",
         "category": "groceries",
-        "thumbnail": "https://i.dummyjson.com/data/products/25/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/25/25- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/25/1.png",
-          "https://i.dummyjson.com/data/products/25/2.jpg",
-          "https://i.dummyjson.com/data/products/25/3.png",
-          "https://i.dummyjson.com/data/products/25/4.jpg",
-          "https://i.dummyjson.com/data/products/25/thumbnail.jpg"
+          "../../assets/productos/25/25- thumbnail.jpg",
+          "../../assets/productos/25/25- image1.jpg",
+          "../../assets/productos/25/25- image2.jpg",
+          "../../assets/productos/25/25- image3.jpg",
+          "../../assets/productos/25/25- image4.jpg"
         ]
       },
       {
@@ -470,14 +466,12 @@
         "stock": 131,
         "brand": "Boho Decor",
         "category": "home-decoration",
-        "thumbnail": "https://i.dummyjson.com/data/products/26/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/26/26- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/26/1.jpg",
-          "https://i.dummyjson.com/data/products/26/2.jpg",
-          "https://i.dummyjson.com/data/products/26/3.jpg",
-          "https://i.dummyjson.com/data/products/26/4.jpg",
-          "https://i.dummyjson.com/data/products/26/5.jpg",
-          "https://i.dummyjson.com/data/products/26/thumbnail.jpg"
+          "../../assets/productos/26/26- thumbnail.jpg",
+          "../../assets/productos/26/26- image1.jpg",
+          "../../assets/productos/26/26- image2.jpg",
+          "../../assets/productos/26/26- image3.jpg"
         ]
       },
       {
@@ -490,69 +484,68 @@
         "stock": 17,
         "brand": "Flying Wooden",
         "category": "home-decoration",
-        "thumbnail": "https://i.dummyjson.com/data/products/27/thumbnail.webp",
+        "thumbnail": "../../assets/productos/27/27- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/27/1.jpg",
-          "https://i.dummyjson.com/data/products/27/2.jpg",
-          "https://i.dummyjson.com/data/products/27/3.jpg",
-          "https://i.dummyjson.com/data/products/27/4.jpg",
-          "https://i.dummyjson.com/data/products/27/thumbnail.webp"
+          "../../assets/productos/27/27- thumbnail.jpg",
+          "../../assets/productos/27/27- image1.jpg",
+          "../../assets/productos/27/27- image2.jpg",
+          "../../assets/productos/27/27- image3.jpg"
         ]
       },
       {
         "id": 28,
-        "title": "3D Embellishment Art Lamp",
-        "description": "3D led lamp sticker Wall sticker 3d wall art light on/off button  cell operated (included)",
-        "price": 20,
+        "title": "Ceramic Pot Table Lamp",
+        "description": "Ceramic Pot Table Lamp for Bedroom, Living Room, Dining Room, Office, with Beige Tapered Drum Shade ",
+        "price": 69.99,
         "discountPercentage": 16.49,
         "rating": 4.82,
         "stock": 54,
-        "brand": "LED Lights",
+        "brand": "Nourison Lighting",
         "category": "home-decoration",
-        "thumbnail": "https://i.dummyjson.com/data/products/28/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/28/28- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/28/1.jpg",
-          "https://i.dummyjson.com/data/products/28/2.jpg",
-          "https://i.dummyjson.com/data/products/28/3.png",
-          "https://i.dummyjson.com/data/products/28/4.jpg",
-          "https://i.dummyjson.com/data/products/28/thumbnail.jpg"
+          "../../assets/productos/28/28- thumbnail.jpg",
+          "../../assets/productos/28/28- image1.jpg",
+          "../../assets/productos/28/28- image2.jpg",
+          "../../assets/productos/28/28- image3.jpg",
+          "../../assets/productos/28/28- image4.jpg",
+          "../../assets/productos/28/28- image5.jpg"
         ]
       },
       {
         "id": 29,
-        "title": "Handcraft Chinese style",
-        "description": "Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate",
-        "price": 60,
+        "title": "Chinese Ceramics Under-Glazed Blue and White Porcelain",
+        "description": "The goods is full of artistic sense of the lines and the most warm fashion. Perfect for home decoration on the desk or table.",
+        "price": 145,
         "discountPercentage": 15.34,
         "rating": 4.44,
         "stock": 7,
-        "brand": "luxury palace",
+        "brand": "Jingdezhen Ceramics",
         "category": "home-decoration",
-        "thumbnail": "https://i.dummyjson.com/data/products/29/thumbnail.webp",
+        "thumbnail": "../../assets/productos/29/29- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/29/1.jpg",
-          "https://i.dummyjson.com/data/products/29/2.jpg",
-          "https://i.dummyjson.com/data/products/29/3.webp",
-          "https://i.dummyjson.com/data/products/29/4.webp",
-          "https://i.dummyjson.com/data/products/29/thumbnail.webp"
+          "../../assets/productos/29/29- thumbnail.jpg",
+          "../../assets/productos/29/29- image1.jpg",
+          "../../assets/productos/29/29- image2.jpg"
         ]
       },
       {
         "id": 30,
         "title": "Key Holder",
-        "description": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
-        "price": 30,
+        "description": "Decorative Key and Mail Holder with Shelf Has Large Key Hooks for Bags, Coats - Paulownia Wood Key Hanger with Mounting Hardware.",
+        "price": 16.99,
         "discountPercentage": 2.92,
         "rating": 4.92,
         "stock": 54,
-        "brand": "Golden",
+        "brand": "Lwenki",
         "category": "home-decoration",
-        "thumbnail": "https://i.dummyjson.com/data/products/30/thumbnail.jpg",
+        "thumbnail": "../../assets/productos/30/30- thumbnail.jpg",
         "images": [
-          "https://i.dummyjson.com/data/products/30/1.jpg",
-          "https://i.dummyjson.com/data/products/30/2.jpg",
-          "https://i.dummyjson.com/data/products/30/3.jpg",
-          "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
+          "../../assets/productos/30/30- thumbnail.jpg",
+          "../../assets/productos/30/30- image1.jpg",
+          "../../assets/productos/30/30- image2.jpg",
+          "../../assets/productos/30/30- image3.jpg",
+          "../../assets/productos/30/30- image4.jpg"
         ]
       }
     ],
