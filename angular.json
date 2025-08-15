@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mercado-digital",
+            "docs": "dist/mercado-digital",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
